@@ -1,0 +1,63 @@
+.app__features {
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.app__features .app__featurecard {
+    margin-right: 5%;
+}
+
+.app__features .app__featurecard:nth-child(3n) {
+    margin-right: 0;
+}
+
+.app__features-heading {
+    width: 100%;
+    margin: 1rem 0 0 3.8rem;
+    text-align: left;
+}
+
+.app__features-container {
+    width: 100%;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+    .app__features .app__featurecard {
+        margin-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__features .app__featurecard {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .app__features .app__featurecard:last-child {
+        margin-bottom: 0;
+    }
+
+    .app__features-heading {
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__features .app__featurecard {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,90 @@
+.app__notfound {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    overflow: hidden;
+
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+}
+
+.app__notfound-illustration {
+    width: 30%;
+}
+
+.app__notfound-heading {
+    width: 50%;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--color-blue);
+    text-transform: initial;
+}
+
+.app__notfound-subheading {
+    width: 50%;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: var(--color-blue);
+    text-transform: initial;
+}
+
+.app__notfound-button {
+    width: 15%;
+    /* margin: 5rem auto 0; */
+    display: block;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.app__notfound-button button {
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.app__notfound-button:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.app__notfound-button:active {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.app__notfound-button button:hover {
+    background-color: var(--color-blue);
+    transition: 0.2s;
+}
+
+.vector__illustration_left {
+    width: 40%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.vector__illustration_right {
+    width: 40%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

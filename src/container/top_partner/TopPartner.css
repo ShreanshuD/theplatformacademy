@@ -1,0 +1,186 @@
+.app__partner {
+    width: 100%;
+    background-color: var(--color-royalblue);
+    position: relative;
+    z-index: 1;
+}
+
+.snaplogic__monogram_top {
+    width: 30rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.snaplogic__monogram_bottom {
+    width: 30rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.app__partner-title {
+    color: var(--color-white);
+}
+
+.app__partner-logo {
+    width: 12%;
+    margin: 4rem 0 1rem;
+}
+
+.app__partner-description {
+    color: var(--color-white);
+}
+
+.app__partner-subheading {
+    margin: 5rem 0 3rem;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.app__partner-coursecontainer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.app__partner-button {
+    width: 15%;
+    margin: 5rem auto 0;
+    display: block;
+    transition: 0.1s;
+}
+
+.app__partner-button button {
+    width: 100%;
+    padding: 0.6rem 0;
+    color: var(--color-royalblue);
+    background-color: var(--color-white);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.app__partner-button:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
+.app__partner-button:active {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.app__partner-button button .dropdown_arrow {
+    margin-left: 0.5rem;
+    color: var(--color-royalblue);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__partner-logo {
+        width: 13%;
+        margin: 5rem 0 2rem;
+    }
+
+    .app__partner-button {
+        width: 18%;
+    }
+    
+    .app__partner-button button {
+        padding: 1.2rem 0;
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (min-width: 1151px) and (max-width: 1400px) {
+    .app__partner-button {
+        width: 24%;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__partner-logo {
+        width: 22%;
+    }
+
+    .app__partner-button {
+        width: 30%;
+    }
+    
+    .app__partner-button button {
+        font-size: 22px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__partner-logo {
+        width: 28%;
+    }
+
+    .app__partner-button {
+        width: 40%;
+    }
+
+    .app__partner-button button {
+        padding: 1rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__partner-logo {
+        width: 60%;
+    }
+
+    .app__partner-button {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__partner-logo {
+        width: 70%;
+    }
+
+    .app__partner-button button {
+        padding: 0.8rem 0;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__partner-logo {
+        width: 60%;
+    }
+
+    .app__partner-button button {
+        font-size: 18px;
+    }
+}

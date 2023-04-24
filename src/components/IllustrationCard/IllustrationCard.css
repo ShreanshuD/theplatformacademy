@@ -1,0 +1,114 @@
+.app__illustrationcard {
+    width: 30%;
+    min-height: 200px;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    border-radius: 6px;
+    /* box-shadow: rgba(47, 159, 226, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(47, 159, 226, 0.2) 0px 10px 20px, rgba(47, 159, 226, 0.1) 0px 6px 6px;
+    transform: 0.1s;
+}
+
+.app__illustrationcard_illustration {
+    width: 80px;
+    margin: 2rem 0 1rem;
+}
+
+.app__illustrationcard_title {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__illustrationcard {
+        min-height: 280px;
+        border-radius: 8px;
+    }
+
+    .app__illustrationcard_illustration {
+        width: 140px;
+        margin: 0rem 0 1rem;
+    }
+
+    .app__illustrationcard_title {
+        width: 80%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__illustrationcard {
+        min-height: 250px;
+    }
+
+    .app__illustrationcard:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+    .app__illustrationcard_illustration {
+        width: 110px;
+    }
+    
+    .app__illustrationcard_title {
+        width: 80%;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__illustrationcard {
+        min-height: 230px;
+    }
+
+    .app__illustrationcard_illustration {
+        width: 100px;
+    }
+    
+    .app__illustrationcard_title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__illustrationcard {
+        width: 100%;
+        min-height: 280px;
+        margin-bottom: 2rem;
+    }
+
+    .app__illustrationcard_illustration {
+        width: 130px;
+    }
+    
+    .app__illustrationcard_title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__illustrationcard {
+        min-height: 270px;
+    }
+    
+    .app__illustrationcard_title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

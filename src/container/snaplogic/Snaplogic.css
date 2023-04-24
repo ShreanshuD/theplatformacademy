@@ -1,0 +1,72 @@
+.app__snaplogic {
+    width: 100%;
+    background-color: var(--color-royalblue);
+    position: relative;
+    z-index: 1;
+}
+
+.snaplogic__monogram_top {
+    width: 30rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.snaplogic__monogram_bottom {
+    width: 15rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.app__snaplogic-logo {
+    width: 15%;
+    margin: 0 0 2rem;
+}
+
+.app__snaplogic-description {
+    width: 70%;
+    color: var(--color-white);
+}
+
+.app__snaplogic-button {
+    width: 15%;
+    margin: 3rem 80% 0;
+    display: block;
+    transition: 0.1s;
+}
+
+.app__snaplogic-button button {
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--color-royalblue);
+    background-color: var(--color-white);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.app__snaplogic-button:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
+.app__snaplogic-button:active {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.app__snaplogic-button button .dropdown_arrow {
+    margin-left: 0.5rem;
+    color: var(--color-royalblue);
+}

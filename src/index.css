@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-main: 'Poppins', san-serif;
+
+  --color-skyblue: #B1F1FF;
+  --color-lightblue: #D6F0FF;
+  --color-blue: rgb(47, 159, 226);
+  --color-darkblue: #007dc5;
+  --color-royalblue: #043D87;
+  --color-yellow: #FF9B2B;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

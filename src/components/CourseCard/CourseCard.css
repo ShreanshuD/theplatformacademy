@@ -1,0 +1,134 @@
+.app__coursecard-container {
+    width: 22%;
+    cursor: pointer;
+}
+
+.app__coursecard {
+    width: 100%;
+    /* min-height: 30rem; */
+    margin-bottom: 4rem;
+    background-color: var(--color-white);
+    border-radius: 6px;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__coursecard:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.app__coursecard-illustration {
+    width: 80%;
+}
+
+.app__coursecard-title {
+    width: 100%;
+    min-height: 8rem;
+    padding: 1rem 2rem;
+    color: var(--color-black);
+    font-weight: 500;
+    /* line-height: 30px; */
+    letter-spacing: 0.005em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(0, 0, 0, 0.2) 0px -5px 10px;
+
+    align-items: flex-start;
+}
+
+.app__coursecard-footer {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: var(--color-lightblue);
+}
+
+.app__coursecard-footer_logo {
+    width: 8%;
+    margin-right: 1rem;
+}
+
+.app__coursecard-footer_name {
+    width: 70%;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__coursecard-title {
+        min-height: 12rem;
+        padding: 2rem 2rem;
+    }
+
+    .app__coursecard-footer {
+        padding: 0.8rem 0;
+    }
+
+    .app__coursecard-footer_logo {
+        width: 10%;
+    }
+    
+    .app__coursecard-footer_name {
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__coursecard-container {
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__coursecard-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .app__coursecard-container:last-child .app__coursecard {
+        margin-bottom: 0;
+    }
+
+    .app__coursecard-title {
+        text-align: center;
+    }
+
+    .app__coursecard-footer_logo {
+        width: 6%;
+    }
+
+    .app__coursecard-footer_name {
+        width: auto;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__coursecard-container {
+        width: 100%;
+    }
+
+    .app__coursecard-illustration {
+        width: 80%;
+        padding-bottom: 1rem;
+    }
+
+    .app__coursecard-footer_logo {
+        width: 10%;
+    }
+}

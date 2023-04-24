@@ -1,0 +1,76 @@
+.app__featurecard {
+    width: 30%;
+    padding: 1rem 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app__featurecard-illustration {
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+.app__featurecard-title {
+    font-weight: 500;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__featurecard-illustration {
+        width: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1350px) {
+    .app__featurecard {
+        width: 50%;
+    }
+    
+    .app__featurecard-illustration {
+        width: 7rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__featurecard {
+        width: 100%;
+    }
+    
+    .app__featurecard-illustration {
+        width: 6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__featurecard {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .app__featurecard-illustration {
+        width: 5rem;
+        margin-right: 0;
+    }
+
+    .app__featurecard-title {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__featurecard-title {
+        width: 120%;
+        transform: scale(0.9);
+    }
+}
