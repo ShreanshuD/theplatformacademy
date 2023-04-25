@@ -1,4 +1,5 @@
 import TPALogo from '../assets/logo/tpa_logo.svg';
+import ThePlatformAcademyLogo from '../assets/logo/theplatformacademy_logo.svg';
 
 import HeroImage from '../assets/images/hero_image.svg';
 
@@ -58,11 +59,17 @@ import NotFoundVector_Left from '../assets/illustrations/Vector3.svg';
 import NotFoundVector_Right from '../assets/illustrations/Vector4.svg';
 import FatalError from '../assets/illustrations/FatalError.svg';
 
+import EventRegistration from '../assets/images/registration_image.svg';
+
+import BookmarkIcon from '../assets/icon/bookmark_icon.svg';
+import CalendarIcon from '../assets/icon/calendar_icon.svg';
+import LocationIcon from '../assets/icon/location_icon.svg';
 
 
 
 export default {
     TPALogo,
+    ThePlatformAcademyLogo,
 
     HeroImage,
 
@@ -120,5 +127,11 @@ export default {
 
     NotFoundVector_Left,
     NotFoundVector_Right,
-    FatalError
+    FatalError,
+
+    EventRegistration,
+
+    BookmarkIcon,
+    CalendarIcon,
+    LocationIcon
 };

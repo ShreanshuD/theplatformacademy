@@ -1,6 +1,7 @@
 import React from 'react';
 import './UnderConstruction.css';
 import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const UnderConstruction = () => {
     return(
@@ -22,9 +23,9 @@ const UnderConstruction = () => {
                     Site is under construction! This feature will be available soon.
                 </h3>
 
-                <a href="#" className="app__underconstruction-button">
+                <Link to="/" className="app__underconstruction-button">
                     <button className='flex__center' type='button'>Back To Homepage</button>
-                </a>
+                </Link>
 
             </div>
         </>

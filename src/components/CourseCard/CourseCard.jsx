@@ -1,11 +1,12 @@
 import React from 'react';
 import './CourseCard.css';
 import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const CourseCard = ( {title, illustration, navigatinglink} ) => {
     return(
         <>
-            <a href={navigatinglink} className="app__coursecard-container">
+            <Link to="/underconstruction" className="app__coursecard-container">
                 <div className="app__coursecard">
 
                     <div className="app__coursecard-illustration">
@@ -26,7 +27,7 @@ const CourseCard = ( {title, illustration, navigatinglink} ) => {
                     </div>
 
                 </div>
-            </a>
+            </Link>
         </>
     );
 };

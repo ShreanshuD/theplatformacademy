@@ -29,6 +29,15 @@ a {
     /* background-attachment: fixed; */
 }
 
+.app__landing_bg {
+    width: 100%;
+    background: url('./assets/images/hero_image.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    /* background-attachment: fixed; */
+}
+
 .p__navigation {
     width: 100%;
     height: 100%;
@@ -39,6 +48,18 @@ a {
     text-transform: capitalize;
     line-height: 30px;
     font-size: 20px;
+}
+
+.p__navigation_small {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-main);
+    color: var(--color-blue);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    line-height: 20px;
+    font-size: 18px;
 }
 
 .p__heading {
@@ -129,7 +150,12 @@ a {
 
     .p__navigation {
         line-height: 50px;
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .p__navigation_small {
+        line-height: 50px;
+        font-size: 24px;
     }
 
     .p__heading {
@@ -166,10 +192,21 @@ a {
 
 
 
-@media screen and (min-size: 1200px) and (max-size: 1650px) {
+@media screen and (min-width: 1200px) and (max-width: 1650px) {
     .p__subheading {
         line-height: 50px;
         font-size: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1420px) {
+    .p__large {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -199,14 +236,26 @@ a {
     }
 
     .p__large {
-        font-size: 45px;
-        line-height: 55px;
+        font-size: 52px;
+        line-height: 74px;
+        font-weight: 700;
         letter-spacing: 0.04em;
     }
     
     .p__semibold {
         line-height: 40px;
         font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .p__large {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -244,6 +293,17 @@ a {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    .p__large {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.04em;
+    }
+    
+    /* .p__semibold {
+        line-height: 40px;
+        font-size: 30px;
+    } */
 }
 
 
@@ -270,15 +330,4 @@ a {
         line-height: 26px;
         font-size: 18px;
     }
-
-    /* .p__large {
-        font-size: 45px;
-        line-height: 55px;
-        letter-spacing: 0.04em;
-    }
-    
-    .p__semibold {
-        line-height: 40px;
-        font-size: 30px;
-    } */
 }

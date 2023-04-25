@@ -1,6 +1,6 @@
 import React from 'react';
 import './Events.css';
-// import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const Events = () => {
     return(
@@ -27,24 +27,24 @@ const Events = () => {
                         Venues: 
                         <br></br>
                         <span>
-                            Mumbai : The Taj Mahal Palace
+                            <b>Mumbai</b> : Hyatt Centric Juhu
                             <br></br>
-                            Bangalore : Grand Hyatt Hotel
+                            <b>Bangalore</b> : Hyatt Centric MG Road Bangalore
                             <br></br>
-                            Hyderabad : xxx xxx xxx
+                            <b>Hyderabad</b> : Hyatt Place, Banjara Hills
                             <br></br>
-                            Gurugram : xxx xxx xxx
+                            <b>Delhi NCR</b> : Hyatt Place Gurgaon
                             <br></br>
-                            Pune : xxx xxx xxx
+                            <b>Pune</b> : Courtyard by Marriott Pune, Hinjewadi
                             <br></br>
-                            Chennai : xxx xxx xxx
+                            <b>Chennai</b> : Novotel Chennai Chamiers Road Hotel
                         </span>
                     </p>
 
                 </div>
 
-                <a href="#" className="app__events-button">
-                    <button className='flex__center' type='button'>View All Events</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUEqTpU3XaGmhDDTT8367wFZAVGLrLU5wg0pbN6nbCB8omLw/viewform" target='_blank' className="app__events-button">
+                    <button className='flex__center' type='button'>Register</button>
                 </a>
 
             </div>

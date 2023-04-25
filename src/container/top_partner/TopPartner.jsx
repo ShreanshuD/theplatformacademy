@@ -4,6 +4,7 @@ import { images } from '../../constants';
 import { TopCourses } from '../../constants/data';
 import { CourseCard } from '../../components';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const TopPartner = () => {
     return(
@@ -39,9 +40,9 @@ const TopPartner = () => {
                     }
                 </div>
 
-                <a href="#" className="app__partner-button">
+                <Link to="/courses" className="app__partner-button">
                     <button className='flex__center' type='button'>Learn More <MdOutlineKeyboardArrowDown className='dropdown_arrow' /></button>
-                </a>
+                </Link>
 
             </div>
         </>

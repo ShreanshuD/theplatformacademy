@@ -1,6 +1,7 @@
 import React from 'react';
 import './NotFound.css';
 import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return(
@@ -26,9 +27,9 @@ const NotFound = () => {
                     Error 404: Page Not Found
                 </p>
 
-                <a href="#" className="app__notfound-button">
+                <Link to="/" className="app__notfound-button">
                     <button className='flex__center' type='button'>Back To Homepage</button>
-                </a>
+                </Link>
 
             </div>
         </>

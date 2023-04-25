@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -11,12 +12,12 @@ const Footer = () => {
 
                     <div className="app__footer_content-credentials">
 
-                        <a href='#' className="app__footer_content-credentials-company flex__center">
+                        <Link to='/' className="app__footer_content-credentials-company flex__center">
                             <div className="app__footer_content-credentials-company_logo">
                                 <img src={images.TPALogo} alt="The Platform Academy Logo" />
                             </div>
                             <p className="p__subheading">The Platform Academy</p>
-                        </a>
+                        </Link>
 
                         <div className="app__footer_content-credentials-socialmedia flex__center">
                             <a href="https://www.facebook.com/" target="_blank" className="app__footer_content-credentials-socialmedia_facebook">
@@ -37,26 +38,26 @@ const Footer = () => {
 
                     <div className="app__footer_content-tpa">
                         <p className="p__subheading">The Platform Academy</p>
-                        <a href="#" className="p__paragraph">Careers</a>
-                        <a href="#" className="p__paragraph">For Learners</a>
-                        <a href="#" className="p__paragraph">For Social Integrators</a>
-                        <a href="#" className="p__paragraph">For Educational Institutes</a>
-                        <a href="#" className="p__paragraph">Courses</a>
-                        <a href="#" className="p__paragraph">Events</a>
+                        <Link to="/underconstruction" className="p__paragraph">Careers</Link>
+                        <Link to="/underconstruction" className="p__paragraph">For Learners</Link>
+                        <Link to="/underconstruction" className="p__paragraph">For Social Integrators</Link>
+                        <Link to="/underconstruction" className="p__paragraph">For Educational Institutes</Link>
+                        <Link to="/courses" className="p__paragraph">Courses</Link>
+                        <Link to="/underconstruction" className="p__paragraph">Events</Link>
                     </div>
 
                     <div className="app__footer_content-more">
                         <p className="p__subheading">More</p>
-                        <a href="#" className="p__paragraph">Press</a>
-                        <a href="#" className="p__paragraph">Terms</a>
-                        <a href="#" className="p__paragraph">Privacy</a>
-                        <a href="#" className="p__paragraph">Help</a>
-                        <a href="#" className="p__paragraph">Contact</a>
+                        <Link to="/underconstruction" className="p__paragraph">Press</Link>
+                        <Link to="/underconstruction" className="p__paragraph">Terms</Link>
+                        <Link to="/underconstruction" className="p__paragraph">Privacy</Link>
+                        <Link to="/underconstruction" className="p__paragraph">Help</Link>
+                        <Link to="/underconstruction" className="p__paragraph">Contact</Link>
                     </div>
 
                     <div className="app__footer_content-contact">
                         <p className="p__subheading">Contact Us</p>
-                        <a href="#" className="p__paragraph">Contact Page</a>
+                        <Link to="/underconstruction" className="p__paragraph">Contact Page</Link>
                     </div>
 
                 </div>

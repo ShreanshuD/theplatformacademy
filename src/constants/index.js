@@ -1,5 +1,5 @@
 import images from "./images";
-import { Benefits, WhyIndia, Learning, FeatureList, CityList, AllCourseDetails } from "./data";
+import { Benefits, WhyIndia, Learning, FeatureList, CityList, AllCourseDetails, LaunchEvent } from "./data";
 
 export {
     images,
@@ -8,5 +8,6 @@ export {
     Learning,
     FeatureList,
     CityList,
-    AllCourseDetails
+    AllCourseDetails,
+    LaunchEvent
 };

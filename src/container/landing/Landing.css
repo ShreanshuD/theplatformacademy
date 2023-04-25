@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding-top: 30%;
     background-color: var(--color-white);
+    overflow: hidden;
 
     position: relative;
 }
@@ -53,7 +54,46 @@
     width: 85%;
     height: 75%;
     padding: 5rem;
-    background-color: var(--color-blue);
+    background-color: rgb(47, 159, 226, 0.9);
     border-radius: 4px;
     opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__landing_hero {
+        width: 160%;
+
+        top: 0;
+        left: -40%;
+        transform: translate(0, 0);
+    }
+
+    .app__landing_content {
+        width: 80%;
+        height: 60%;
+    
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    .app__landing_content-illustration {
+        opacity: 0.3;
+    }
+
+    .app__landing_content-title {
+        background-color: rgb(47, 159, 226, 0.8);
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__landing_content {
+        width: 80%;
+        height: 60%;
+    }
 }

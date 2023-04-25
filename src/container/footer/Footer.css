@@ -190,7 +190,7 @@
     .app__footer_content-more,
     .app__footer_content-contact {
         width: 100%;
-        text-align: center;
+        text-align: left;
         margin-bottom: 3rem;
     }
 
@@ -201,11 +201,11 @@
         margin-bottom: 1rem;
     }
 
-    .app__footer_content-tpa a,
+    /* .app__footer_content-tpa a,
     .app__footer_content-more a,
     .app__footer_content-contact a {
         margin: auto;
-    }
+    } */
 }
 
 

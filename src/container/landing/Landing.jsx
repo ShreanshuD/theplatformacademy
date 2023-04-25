@@ -5,9 +5,12 @@ import { images } from '../../constants';
 const Landing = () => {
     return (
         <>
-            <div className="app__landing section__padding">
+            <div className={window.innerWidth > 1150 ? "app__landing section__padding" : "app__landing section__padding app__landing_bg"}>
                 <div className="app__landing_hero">
-                    <img src={images.HeroImage} alt="Hero Image" />
+                    {
+                        window.innerWidth > 1150 &&
+                        <img src={images.HeroImage} alt="Hero Image" />
+                    }
                 </div>
                 <div className="app__landing_content flex__center">
                     <div className="app__landing_content-illustration" id="illustration-1"></div>
