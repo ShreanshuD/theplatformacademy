@@ -97,7 +97,7 @@
     }
 
     .app__learningcard_navigation button {
-        margin-top: 2rem;
+        margin-top: 0rem;
         padding: 1rem 0;
         border-radius: 6px;
         font-size: 26px;
@@ -111,9 +111,35 @@
 
 
 @media screen and (min-width: 1151px) and (max-width: 1600px) {
+    .app__learningcard {
+        width: 100%;
+    }
+
     .app__learningcard_navigation {
         width: 55%;
         margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .app__learningcard_informationcontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .app__learningcard_illustration {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    
+    .app__learningcard_information {
+        width: 100%;
+
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 

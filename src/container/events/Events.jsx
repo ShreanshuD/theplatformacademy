@@ -21,7 +21,7 @@ const Events = () => {
                         SnapLogic Academy Launch Event
                         <br></br>
                         <br></br>
-                        6<sup>th</sup> May 2023, 11:00 A.M.
+                        6<sup>th</sup> May 2023, 11:00 AM
                         <br></br>
                         <br></br>
                         Venues: 

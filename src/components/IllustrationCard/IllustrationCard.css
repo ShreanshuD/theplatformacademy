@@ -16,9 +16,9 @@
 
 .app__illustrationcard_title {
     width: 70%;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 18px;
     text-align: center;
 }
 
@@ -39,6 +39,15 @@
         width: 80%;
         font-size: 20px;
         line-height: 30px;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .app__illustrationcard {
+        width: 45%;
+        min-height: 230px;
     }
 }
 

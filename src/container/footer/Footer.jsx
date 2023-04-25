@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <div className="app__footer_content-credentials">
 
-                        <Link to='/' className="app__footer_content-credentials-company flex__center">
+                        <Link to='/' className="app__footer_content-credentials-company flex__center" onClick={ () => window.scrollTo(0, 0) }>
                             <div className="app__footer_content-credentials-company_logo">
                                 <img src={images.TPALogo} alt="The Platform Academy Logo" />
                             </div>
@@ -49,8 +49,8 @@ const Footer = () => {
                     <div className="app__footer_content-more">
                         <p className="p__subheading">More</p>
                         <Link to="/underconstruction" className="p__paragraph">Press</Link>
-                        <Link to="/underconstruction" className="p__paragraph">Terms</Link>
-                        <Link to="/underconstruction" className="p__paragraph">Privacy</Link>
+                        <Link to="https://www.termsfeed.com/live/b93d3889-4eac-416c-a4ba-ae860a2e003b" target="_blank" className="p__paragraph">Terms</Link>
+                        <Link to="https://www.termsfeed.com/live/b93d3889-4eac-416c-a4ba-ae860a2e003b" target="_blank" className="p__paragraph">Privacy</Link>
                         <Link to="/underconstruction" className="p__paragraph">Help</Link>
                         <Link to="/underconstruction" className="p__paragraph">Contact</Link>
                     </div>

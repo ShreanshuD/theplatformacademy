@@ -66,11 +66,11 @@ a {
     width: 100%;
     height: 100%;
     font-family: var(--font-main);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     line-height: 50px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .p__subheading {
@@ -81,7 +81,7 @@ a {
     letter-spacing: 0.01em;
     text-transform: capitalize;
     line-height: 35px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .p__paragraph {
@@ -160,12 +160,12 @@ a {
 
     .p__heading {
         line-height: 70px;
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .p__subheading {
         line-height: 60px;
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .p__paragraph {
@@ -194,8 +194,8 @@ a {
 
 @media screen and (min-width: 1200px) and (max-width: 1650px) {
     .p__subheading {
-        line-height: 50px;
-        font-size: 40px;
+        line-height: 30px;
+        font-size: 25px;
     }
 }
 
@@ -222,12 +222,12 @@ a {
 
     .p__heading {
         line-height: 50px;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .p__subheading {
         line-height: 40px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .p__paragraph {
@@ -263,8 +263,8 @@ a {
 
 @media screen and (max-width: 850px) {
     .p__subheading {
-        line-height: 40px;
-        font-size: 28px;
+        line-height: 30px;
+        font-size: 25px;
     }
 
     .p__paragraph {
@@ -318,12 +318,12 @@ a {
 
     .p__heading {
         line-height: 40px;
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .p__subheading {
         line-height: 35px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .p__paragraph {

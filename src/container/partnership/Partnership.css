@@ -84,6 +84,14 @@
 
 
 
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .vertical__partition {
+        height: 110rem;
+    }
+}
+
+
+
 @media screen and (max-width: 1150px) {
     .app__partnership {
         flex-direction: column;

@@ -19,7 +19,7 @@ const NavBar = () => {
         <>
             <div className="app__navbar" id="navbar">
 
-                <Link to='/' className="app__navbar_title">
+                <Link to='/' className="app__navbar_title" onClick={ () => window.scrollTo(0, 0) }>
                     <div className="app__navbar_title-logo">
                         <img src={images.ThePlatformAcademyLogo} alt="The Platform Academy Logo" />
                     </div>
@@ -113,17 +113,17 @@ const NavBar = () => {
                     <MdOutlineClose />
                 </div>
                 <div className="app__navbar_overlay-navigations flex__center">
-                    <Link href='/course' className="app__navbar_navigations-menu">
+                    <Link to='/courses' className="app__navbar_navigations-menu" onClick={ () => setMenuOverlay(false) }>
                         <p className="p__navigation flex__center">
                             Courses
                         </p>
                     </Link>
-                    <Link href='/underconstruction' className="app__navbar_navigations-menu">
+                    <Link to='/underconstruction' className="app__navbar_navigations-menu" onClick={ () => setMenuOverlay(false) }>
                         <p className="p__navigation flex__center">
                             About Us
                         </p>
                     </Link>
-                    <Link href='/underconstruction' className="app__navbar_navigations-menu">
+                    <Link to='/underconstruction' className="app__navbar_navigations-menu" onClick={ () => setMenuOverlay(false) }>
                         <p className="p__navigation flex__center">
                             Why Us
                         </p>

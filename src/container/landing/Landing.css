@@ -19,7 +19,7 @@
 
 .app__landing_content {
     width: 55%;
-    height: 60%;
+    height: 70%;
 
     position: absolute;
     top: 50%;
@@ -52,7 +52,7 @@
 
 .app__landing_content-title {
     width: 85%;
-    height: 75%;
+    height: fit-content;
     padding: 5rem;
     background-color: rgb(47, 159, 226, 0.9);
     border-radius: 4px;
