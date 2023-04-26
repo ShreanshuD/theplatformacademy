@@ -1,6 +1,7 @@
 .app__presence {
     width: 100%;
     background-color: var(--color-lightblue);
+    overflow: hidden;
 }
 
 .app__presence_information {
@@ -58,6 +59,7 @@
 
     .app__presence_information {
         width: 100%;
+        margin-bottom: 0;
         order: 2;
     }
 
@@ -66,9 +68,30 @@
     }
 
     .app__presence_map {
-        width: 80%;
+        width: 60%;
         margin-bottom: 5rem;
         order: 1;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 40%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__presence_information-cities_listitem {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .app__presence_information-cities_listitem {
+        width: 60%;
     }
 }
 
@@ -79,6 +102,11 @@
         width: 120%;
         transform: scale(0.8);
     }
+
+    .app__presence_map {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
 
 
@@ -86,11 +114,12 @@
 @media screen and (max-width: 680px) {
     .app__presence_information {
         width: 160%;
+        margin-bottom: -8rem;
         transform: scale(0.6);
     }
 
     .app__presence_map {
-        margin-bottom: 0;
+        margin-bottom: -3rem;
     }
 }
 
@@ -100,5 +129,41 @@
     .app__presence_information {
         width: 200%;
         transform: scale(0.6);
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .app__presence_information {
+        margin-left: 5rem;
+    }
+
+    .app__presence_information {
+        margin-left: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__presence_information {
+        margin-left: 4rem;
+    }
+
+    .app__presence_information-title {
+        font-size: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .app__presence_information {
+        margin-left: 2rem;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 80%;
     }
 }

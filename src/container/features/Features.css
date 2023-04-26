@@ -41,23 +41,10 @@
 @media screen and (max-width: 650px) {
     .app__features .app__featurecard {
         margin-right: 0;
-        margin-bottom: 3rem;
-    }
-
-    .app__features .app__featurecard:last-child {
-        margin-bottom: 0;
     }
 
     .app__features-heading {
-        margin: 1rem 0 0 0;
+        margin: 0rem 0 0 0;
         text-align: center;
-    }
-}
-
-
-
-@media screen and (max-width: 350px) {
-    .app__features .app__featurecard {
-        margin-bottom: 1rem;
     }
 }

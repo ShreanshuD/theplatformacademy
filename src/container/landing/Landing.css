@@ -53,7 +53,7 @@
 .app__landing_content-title {
     width: 85%;
     height: fit-content;
-    padding: 5rem;
+    padding: 4rem;
     background-color: rgb(47, 159, 226, 0.9);
     border-radius: 4px;
     opacity: 0.8;
@@ -72,7 +72,7 @@
 
     .app__landing_content {
         width: 80%;
-        height: 60%;
+        height: 50%;
     
         position: absolute;
         top: 50%;
@@ -85,6 +85,7 @@
     }
 
     .app__landing_content-title {
+        padding: 3rem;
         background-color: rgb(47, 159, 226, 0.8);
     }
 }
@@ -94,6 +95,22 @@
 @media screen and (max-width: 850px) {
     .app__landing_content {
         width: 80%;
+        height: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__landing_content {
+        height: 70%;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .app__landing_content {
         height: 60%;
     }
 }

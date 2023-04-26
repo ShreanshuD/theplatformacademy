@@ -43,9 +43,9 @@ const Events = () => {
 
                 </div>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUEqTpU3XaGmhDDTT8367wFZAVGLrLU5wg0pbN6nbCB8omLw/viewform" target='_blank' className="app__events-button">
-                    <button className='flex__center' type='button'>Register</button>
-                </a>
+                <Link to="/event" className="app__events-button">
+                    <button className='flex__center' type='button'>View All Events</button>
+                </Link>
 
             </div>
         </>

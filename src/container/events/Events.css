@@ -169,6 +169,10 @@
         min-height: 20rem;
     }
 
+    .app__events-content_info {
+        line-height: 30px;
+    }
+
     .app__events-button {
         width: 60%;
     }

@@ -99,7 +99,7 @@
 
 @media screen and (min-width: 2000px) {
     .app__footer_content-credentials-socialmedia {
-        margin: 1rem 0 0 8rem;
+        margin: 1rem 0 0 5rem;
     }
 
     .app__footer_credits {
@@ -125,14 +125,14 @@
     }
 
     .app__footer_content-credentials {
-        width: 60%;
+        width: max-content;
         margin-top: 3rem;
         order: 4;
     }
 
     .app__footer_content-credentials-socialmedia {
         width: 60%;
-        margin: 1rem 0 0 6rem;
+        margin: 1rem 0 0 5rem;
     }
 
     .app__footer_content-tpa {
@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 850px) {
     .app__footer_content-credentials {
-        width: 80%;
+        width: max-content;
     }
 
     .app__footer_content-tpa {
@@ -183,7 +183,7 @@
     }
 
     .app__footer_content-credentials {
-        width: 100%;
+        width: max-content;
     }
 
     .app__footer_content-tpa,

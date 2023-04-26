@@ -144,8 +144,8 @@ a {
     .section__padding {
         padding-top: 10rem;
         padding-bottom: 10rem;
-        padding-left: 16rem;
-        padding-right: 16rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 
     .p__navigation {
@@ -165,7 +165,7 @@ a {
 
     .p__subheading {
         line-height: 60px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .p__paragraph {
@@ -201,7 +201,18 @@ a {
 
 
 
-@media screen and (min-width: 1150px) and (max-width: 1420px) {
+@media screen and (min-width: 1151px) and (max-width: 1500px) {
+    .section__padding {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1440px) {
     .p__large {
         font-size: 48px;
         line-height: 60px;
@@ -214,10 +225,10 @@ a {
 
 @media screen and (max-width: 1150px) {
     .section__padding {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     .p__heading {
@@ -286,7 +297,7 @@ a {
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .section__padding {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -294,16 +305,63 @@ a {
         padding-right: 4rem;
     }
 
+    .p__navigation {
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .section__padding {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .p__heading {
+        line-height: 40px;
+        font-size: 28px;
+    }
+
+    .p__subheading {
+        line-height: 35px;
+        font-size: 24px;
+    }
+
     .p__large {
         font-size: 30px;
         line-height: 40px;
         letter-spacing: 0.04em;
+    }
+
+    .p__paragraph {
+        line-height: 24px;
+        font-size: 18px;
     }
     
     /* .p__semibold {
         line-height: 40px;
         font-size: 30px;
     } */
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .section__padding {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .p__large {
+        font-size: 22px;
+        line-height: 25px;
+    }
 }
 
 
@@ -327,7 +385,7 @@ a {
     }
 
     .p__paragraph {
-        line-height: 26px;
-        font-size: 18px;
+        line-height: 22px;
+        font-size: 16px;
     }
 }

@@ -31,14 +31,14 @@
     }
 
     .app__illustrationcard_illustration {
-        width: 140px;
+        width: 100px;
         margin: 0rem 0 1rem;
     }
 
     .app__illustrationcard_title {
         width: 80%;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 28px;
     }
 }
 
@@ -47,6 +47,7 @@
 @media screen and (min-width: 1150px) and (max-width: 1500px) {
     .app__illustrationcard {
         width: 45%;
+        margin: 0 0.4rem 1rem;
         min-height: 230px;
     }
 }
@@ -94,18 +95,31 @@
 
 @media screen and (max-width: 650px) {
     .app__illustrationcard {
-        width: 100%;
-        min-height: 280px;
-        margin-bottom: 2rem;
+        width: 45%;
+        min-height: 180px;
+        margin: 0 0.4rem 1rem;
+    }
+
+    .app__illustrationcard:nth-child(2) {
+        margin-bottom: 1rem;
     }
 
     .app__illustrationcard_illustration {
-        width: 130px;
+        width: 60px;
     }
     
     .app__illustrationcard_title {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__illustrationcard_title {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
@@ -113,11 +127,11 @@
 
 @media screen and (max-width: 350px) {
     .app__illustrationcard {
-        min-height: 270px;
+        min-height: 180px;
     }
     
     .app__illustrationcard_title {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 20px;
     }
 }

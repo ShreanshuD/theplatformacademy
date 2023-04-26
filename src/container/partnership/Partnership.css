@@ -78,13 +78,18 @@
 
     .vertical__partition {
         width: 6px;
-        height: 100rem;
+        height: 105rem;
     }
 }
 
 
 
 @media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .app__partnership_partner-illustrationcards {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     .vertical__partition {
         height: 110rem;
     }
@@ -129,8 +134,9 @@
 
 @media screen and (max-width: 650px) {
     .app__partnership_partner-illustrationcards {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 }

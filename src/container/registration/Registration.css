@@ -1,0 +1,352 @@
+.app__registration {
+    width: 100%;
+}
+
+.app__registration_event {
+    width: 100%;
+    margin: 3rem 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app__registration_event-image {
+    width: 70%;
+    height: 30rem;
+    border-radius: 4px;
+}
+
+.app__registration_event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.app__registration_event-info-container {
+    width: 25%;
+    height: 30rem;
+    padding: 3rem;
+    background-color: var(--color-lightblue);
+    border-radius: 4px;
+}
+
+.app__registration_event-info {
+    width: 100%;
+}
+
+.app__registration_event-info-title {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.app__registration_event-info-eventdetails {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+.app__registration_event-info-eventdetails img {
+    width: 1.4rem;
+    margin-right: 1.5rem;
+}
+
+.app__registration_event-info-register {
+    width: 90%;
+    height: fit-content;
+    margin: 3rem auto 0;
+    display: block;
+}
+
+.app__registration_event-info-register button {
+    width: 100%;
+    padding: 0.8rem 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--color-yellow);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.app__registration_event-info-register button:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.app__registration_event-info-register button:active {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.app__registration_about {
+    margin-bottom: 2rem;
+}
+
+.app__registration_details {
+    width: 100%;
+    margin-top: 3rem;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__registration_details-itinerary,
+.app__registration_details-venue {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.app__registration_details-itinerary {
+    margin-right: 10rem;
+}
+
+.app__registration_details-itinerary > p,
+.app__registration_details-venue > p {
+    margin-bottom: 2rem;
+}
+
+.app__registration_details-itinerary-info,
+.app__registration_details-venue-info {
+    margin-bottom: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__registration_details-itinerary-info p:first-child,
+.app__registration_details-venue-info p:first-child {
+    margin-right: 2rem;
+}
+
+.app__registration_details-itinerary-info p:first-child {
+    width: 25%;
+}
+
+.app__registration_details-venue-info p:nth-child(1) {
+    width: 30%;
+}
+
+.app__registration_details-venue-info p:nth-child(2) {
+    width: 15%;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__registration_event-image {
+        width: 60%;
+        height: 40rem;
+    }
+
+    .app__registration_event-info-container {
+        width: 35%;
+        height: 40rem;
+    }
+
+    .app__registration_event-info-register button {
+        width: 100%;
+        padding: 1.4rem 0;
+        font-size: 28px;
+    }
+
+    .app__registration_details-itinerary,
+    .app__registration_details-venue {
+        width: 50%;
+    }
+
+    .app__registration_details-itinerary-info p:first-child {
+        width: 30%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(1) {
+        width: 40%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(2) {
+        width: 20%;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .app__registration_details-itinerary {
+        width: 60%;
+    }
+
+    .app__registration_details-venue {
+        width: 40%;
+    }
+
+    .app__registration_details-itinerary-info p:first-child {
+        width: 30%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(1) {
+        width: 50%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(2) {
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    .app__registration_details {
+        flex-direction: column;
+    }
+
+    .app__registration_details-itinerary {
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    .app__registration_details-venue {
+        width: 80%;
+        margin-top: 3rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+    .app__registration_event-image {
+        width: 60%;
+        height: 35rem;
+    }
+
+    .app__registration_event-info-container {
+        width: 35%;
+        height: 35rem;
+    }
+
+    .app__registration_event-info-register button {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 26px;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1400px) {
+    .app__registration_event-image {
+        width: 40%;
+        height: 32rem;
+    }
+
+    .app__registration_event-info-container {
+        width: 55%;
+        height: 32rem;
+    }
+
+    .app__registration_event-info-register button {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 26px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__registration_event {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .app__registration_event-image {
+        width: 100%;
+        height: 40rem;
+        margin-bottom: 3rem;
+    }
+
+    .app__registration_event-info-container {
+        width: 100%;
+        height: 28rem;
+    }
+
+    .app__registration_event-info-register button {
+        margin-top: 2rem;
+        padding: 1.3rem 0;
+        font-size: 26px;
+    }
+
+    .app__registration_details-itinerary {
+        width: 100%;
+    }
+
+    .app__registration_details-venue {
+        width: 100%;
+    }
+
+    .app__registration_details-itinerary-info p:first-child {
+        width: 40%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(1) {
+        width: 60%;
+    }
+    
+    .app__registration_details-venue-info p:nth-child(2) {
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__registration_event-info-register button {
+        margin-top: 1rem;
+        padding: 1.2rem 0;
+        font-size: 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__registration_event-info-container {
+        padding: 1rem;
+    }
+
+    .app__registration_details-itinerary-info,
+    .app__registration_details-venue-info {
+        flex-direction: column;
+    }
+
+    .app__registration_details-itinerary-info {
+        margin-bottom: 2rem;
+    }
+
+    .app__registration_details-itinerary-info p:nth-child(1) {
+        margin-bottom: 0.4rem;
+    }
+
+    .app__registration_details-venue-info p:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__registration_event-info-container {
+        height: fit-content;
+    }
+
+    .app__registration_event-info-register button {
+        margin-top: 0;
+        padding: 0.8rem 0;
+        font-size: 20px;
+    }
+}

@@ -155,15 +155,16 @@
     float: right;
     font-size: 40px;
     color: var(--color-blue);
+    cursor: pointer;
 }
 
 .app__navbar_overlay {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-lightblue);
-    transition: 0.4s ease-in;
+    transition: 1s;
     
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -173,10 +174,10 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--color-lightblue);
-    transition: 0.2s ease-out;
+    transition: 0.4s;
     
-    position: absolute;
-    top: -100%;
+    position: fixed;
+    top: -150%;
     left: 0;
     z-index: 100;
 }
@@ -295,7 +296,23 @@
     }
 
     .app__navbar_overlay-close {
-        font-size: 50px;
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        height: 4rem;
+    }
+
+    .app__navbar_title-logo {
+        margin-left: -1.5rem;
+    }
+
+    .app__navbar_overlay-navigations .app__navbar_navigations-menu p {
+        font-size: 20px;
     }
 }
 
@@ -304,5 +321,9 @@
 @media screen and (max-width: 450px) {
     .app__navbar_title {
         width: 80%;
+    }
+
+    .app__navbar_navigations-menu p {
+        width: 100%;
     }
 }

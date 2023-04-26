@@ -13,7 +13,7 @@ const CourseCard = ( {title, illustration, navigatinglink} ) => {
                         <img src={illustration} alt={title + " Illustration"} />
                     </div>
 
-                    <p className="app__coursecard-title p__paragraph flex__center">
+                    <p className="app__coursecard-title p__paragraph">
                         {title}
                     </p>
 

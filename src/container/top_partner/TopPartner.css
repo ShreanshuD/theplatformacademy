@@ -54,7 +54,7 @@
 
 .app__partner-button {
     width: 15%;
-    margin: 5rem auto 0;
+    margin: 3rem auto 0;
     display: block;
     transition: 0.1s;
 }
@@ -124,7 +124,7 @@
     }
 
     .app__partner-button {
-        width: 30%;
+        width: 26%;
     }
     
     .app__partner-button button {
@@ -140,7 +140,7 @@
     }
 
     .app__partner-button {
-        width: 40%;
+        width: 34%;
     }
 
     .app__partner-button button {
@@ -156,7 +156,7 @@
     }
 
     .app__partner-button {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -169,7 +169,7 @@
 
     .app__partner-button button {
         padding: 0.8rem 0;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
