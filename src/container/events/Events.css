@@ -160,6 +160,10 @@
     .app__events-content_image {
         min-height: 30rem;
     }
+
+    .app__events-content_info {
+        padding: 1.5rem;
+    }
 }
 
 

@@ -301,13 +301,22 @@ a {
     .section__padding {
         padding-top: 4rem;
         padding-bottom: 4rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .p__navigation {
         line-height: 30px;
         font-size: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 450px) and (max-width: 480px) {
+    .p__subheading {
+        line-height: 28px;
+        font-size: 22px;
     }
 }
 
@@ -370,8 +379,8 @@ a {
     .section__padding {
         padding-top: 3rem;
         padding-bottom: 3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .p__heading {

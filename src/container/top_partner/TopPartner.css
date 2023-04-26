@@ -158,6 +158,11 @@
     .app__partner-button {
         width: 50%;
     }
+
+    .app__partner-button button {
+        padding: 0.8rem 0;
+        font-size: 18px;
+    }
 }
 
 
