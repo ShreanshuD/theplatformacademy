@@ -23,6 +23,7 @@ const Events = () => {
                         <br></br>
                         6<sup>th</sup> May 2023, 11:00 AM
                         <br></br>
+                        <br></br>
                         Venues: 
                         <br></br>
                         <span>

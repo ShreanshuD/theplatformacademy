@@ -1251,6 +1251,100 @@ const LaunchEvent = {
 
 
 
+const SlEduSeries = {
+  eventTitle: <>
+    SL EduSeries
+    <p className="p__paragraph">ETL & Integration Job Seminar</p>
+  </>,
+  eventType: "SL Academy India Launch Event",
+  eventDate: "6th May 2023 | 09:00 AM IST",
+  eventLocation: "Hyderabad | Delhi | Bangalore | Chennai | Pune | Mumbai",
+  eventImage: images.EventRegistration,
+  eventDescription: <>
+    Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
+    <br></br>
+    <br></br>
+    The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+    <br></br>
+    <br></br>
+    We will also be giving an overview of the SnapLogic Academy India, which offers world-class training and certification programs. This Launch event will take place across six IT hubs in India, including Mumbai, Bangalore, Hyderabad, Chennai, Delhi, and Pune. We welcome you to join us at the venue nearest to you and take advantage of this unique opportunity to connect with like-minded professionals and gain insights into the latest technologies and trends shaping our industry.
+  </>,
+  eventItinerary: [
+    {
+      time: <b>11:00 AM</b>,
+      details: <>
+        <b>Keynote</b>
+        <br></br>
+        Software Engineer Jobs in AI dominant IT sectors
+      </>
+    },
+    {
+      time: <b>11:45 AM</b>,
+      details: <>
+        <b>The Looking Glass for the Coming Decade</b>
+        <br></br>
+        Preparing for stellar IT career: 2023-2032 
+      </>
+    },
+    {
+      time: <b>12:30 PM</b>,
+      details: <>
+        <b>Lunch</b>
+      </>
+    },
+    {
+      time: <b>01:45 PM</b>,
+      details: <>
+        <b>SnapLogic iPaaS Overview</b>
+        <br></br>
+        Panel Discussion on ETL & Data Integration
+      </>
+    },
+    {
+      time: <b>02:45 PM</b>,
+      details: <>
+        <b>Academy Offering</b>
+        <br></br>
+        SnapLogic Academy India - Course & SignUps
+      </>
+    },
+    {
+      time: <b>04:00 PM</b>,
+      details: <>
+        <b>Conclusion</b>
+      </>
+    }
+  ],
+  eventVenue: [
+    {
+      city: "Mumbai",
+      address: "Hyatt Centric Juhu"
+    },
+    {
+      city: "Bangalore",
+      address: "Hyatt Centric MG Road Bangalore"
+    },
+    {
+      city: "Chennai",
+      address: "Novotel Chennai Chamiers Road Hotel"
+    },
+    {
+      city: "Hyderabad",
+      address: "Hyatt Place, Banjara Hills"
+    },
+    {
+      city: "Delhi NCR",
+      address: "Hyatt Place Gurgaon"
+    },
+    {
+      city: "Pune",
+      address: "Courtyard by Marriott Pune, Hinjewadi"
+    }
+  ]
+};
+
+
+
 export {
     Benefits,
     WhyIndia,
@@ -1260,5 +1354,6 @@ export {
     TopCourses,
     AllCourses,
     AllCourseDetails,
-    LaunchEvent
-}
+    LaunchEvent,
+    SlEduSeries
+};

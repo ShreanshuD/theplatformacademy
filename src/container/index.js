@@ -15,7 +15,7 @@ import NotFound from "./not_found/NotFound";
 
 import CourseDetails from "./course_details/CourseDetails";
 
-import Registration from "./registration/Registration";
+import EventInformation from "./event_information/EventInformation";
 
 export {
     NavBar,
@@ -35,5 +35,5 @@ export {
 
     CourseDetails,
 
-    Registration
+    EventInformation
 };

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Registration.css';
-import { LaunchEvent } from '../../constants';
+import './EventInformation.css';
+import { SlEduSeries } from '../../constants';
 import { images } from '../../constants';
 import { Link } from 'react-router-dom';
 
 
 
-const Registration = () => {
+const EventInformation = () => {
     return(
         <>
             <div className="app__registration section__padding">
@@ -14,30 +14,30 @@ const Registration = () => {
                 <div className="app__registration_event flex__center">
 
                     <div className="app__registration_event-image">
-                        <img src={LaunchEvent.eventImage} alt="The Platform Academy Launch Event" />
+                        <img src={SlEduSeries.eventImage} alt="The Platform Academy Launch Event" />
                     </div>
 
                     <div className="app__registration_event-info-container flex__center">
                         <div className="app__registration_event-info">
                             <h3 className="app__registration_event-info-title p__subheading">
-                                {LaunchEvent.eventTitle}
+                                {SlEduSeries.eventTitle}
                             </h3>
                             <div className="app__registration_event-info-eventdetails flex__center">
                                 <img src={images.BookmarkIcon} alt="Bookmark Icon" />
                                 <p className="p__paragraph">
-                                    {LaunchEvent.eventType}
+                                    {SlEduSeries.eventType}
                                 </p>
                             </div>
                             <div className="app__registration_event-info-eventdetails flex__center">
                                 <img src={images.CalendarIcon} alt="Calendar Icon" />
                                 <p className="p__paragraph">
-                                    {LaunchEvent.eventType}
+                                    {SlEduSeries.eventType}
                                 </p>
                             </div>
                             <div className="app__registration_event-info-eventdetails flex__center">
                                 <img src={images.LocationIcon} alt="Location Icon" />
                                 <p className="p__paragraph">
-                                    {LaunchEvent.eventLocation}
+                                    {SlEduSeries.eventLocation}
                                 </p>
                             </div>
                             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfUEqTpU3XaGmhDDTT8367wFZAVGLrLU5wg0pbN6nbCB8omLw/viewform" target="_blank" className="app__registration_event-info-register">
@@ -52,7 +52,7 @@ const Registration = () => {
                     About the event
                 </p>
                 <p className="app__registration_aboutdescription p__paragraph">
-                    {LaunchEvent.eventDescription}
+                    {SlEduSeries.eventDescription}
                 </p>
 
                 <div className="app__registration_details flex__center">
@@ -60,7 +60,7 @@ const Registration = () => {
                     <div className="app__registration_details-itinerary">
                         <p className='p__subheading'><b>Event Itinerary:</b></p>
                         {
-                            LaunchEvent.eventItinerary.map( (itineraryDetail) => {
+                            SlEduSeries.eventItinerary.map( (itineraryDetail) => {
                                 return (
                                     <div className='app__registration_details-itinerary-info flex__center'>
                                         <p className='p__paragraph'>{itineraryDetail.time}</p>
@@ -74,7 +74,7 @@ const Registration = () => {
                     <div className="app__registration_details-venue">
                         <p className='p__subheading'><b>Event Venues:</b></p>
                         {
-                            LaunchEvent.eventVenue.map( (venueDetail) => {
+                            SlEduSeries.eventVenue.map( (venueDetail) => {
                                 return (
                                     <div className='app__registration_details-venue-info flex__center'>
                                         <p className='p__paragraph'><b>{venueDetail.city}</b></p>
@@ -93,4 +93,4 @@ const Registration = () => {
     );
 };
 
-export default Registration;
+export default EventInformation;
