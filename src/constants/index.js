@@ -1,5 +1,5 @@
 import images from "./images";
-import { Benefits, WhyIndia, Learning, FeatureList, CityList, AllCourseDetails, LaunchEvent, SlEduSeries } from "./data";
+import { Benefits, WhyIndia, Learning, FeatureList, CityList, AllCourseDetails, LaunchEvent, SlEduSeries, BoostYourBusiness, StudentsFutureReady, BoostYourCareer, CustomCourse } from "./data";
 
 export {
     images,
@@ -10,5 +10,9 @@ export {
     CityList,
     AllCourseDetails,
     LaunchEvent,
-    SlEduSeries
+    SlEduSeries,
+    BoostYourBusiness,
+    StudentsFutureReady,
+    BoostYourCareer,
+    CustomCourse
 };

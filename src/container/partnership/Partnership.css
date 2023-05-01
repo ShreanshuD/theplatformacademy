@@ -23,7 +23,7 @@
 .app__partnership_partner-heading,
 .app__partnership_learn-heading {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-align: left;
 }
 
@@ -45,9 +45,9 @@
 
 .vertical__partition {
     width: 4px;
-    height: 70rem;
-    margin: 2rem 3rem;
-
+    height: 71rem;
+    margin: 0.6rem 3rem;
+    opacity: 0.6;
     background-color: var(--color-blue);
 }
 
@@ -69,29 +69,59 @@
 
     .app__partnership_partner-heading,
     .app__partnership_learn-heading {
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
     }
 
     .app__partnership_partner-subheading {
-        margin: 5rem 0 3rem;
+        margin: 4rem 0 3rem;
     }
 
     .vertical__partition {
         width: 6px;
-        height: 105rem;
+        height: 95rem;
+    }
+}
+
+
+
+@media screen and (min-width: 2450px) {
+    .vertical__partition {
+        width: 6px;
+        height: 97rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1680px) {
+    .vertical__partition {
+        height: 73rem;
     }
 }
 
 
 
 @media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .app__partnership_partner-heading,
+    .app__partnership_learn-heading {
+        margin-bottom: 3rem;
+    }
+
     .app__partnership_partner-illustrationcards {
         justify-content: center;
         align-items: flex-start;
     }
 
     .vertical__partition {
-        height: 110rem;
+        height: 106rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1380px) {
+    .vertical__partition {
+        height: 107.6rem;
     }
 }
 
@@ -104,6 +134,10 @@
         align-items: center;
     }
 
+    .app__partnership_learn-learningcards .app__learningcard:last-child {
+        margin-bottom: 0;
+    }
+
     .app__partnership_partner,
     .app__partnership_learn {
         width: 100%;
@@ -112,17 +146,25 @@
     .app__partnership_partner {
         padding-right: 0rem;
     }
+
+    .app__partnership_partner-heading {
+        margin-bottom: 2.8rem;
+    }
     
     .app__partnership_learn {
         padding-left: 0rem;
     }
 
     .app__partnership_learn-heading {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .app__partnership_partner-subheading {
-        margin: 5rem 0 3rem;
+        margin: 3rem 0 3rem;
+    }
+
+    .app__partnership_learn-heading {
+        margin-top: 2rem;
     }
 
     .vertical__partition {
@@ -138,5 +180,29 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .app__partnership_partner-heading {
+        margin-bottom: 2rem;
+    }
+
+    .app__partnership_learn-heading {
+        margin: 3rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__partnership_learn-heading {
+        margin: 2rem 0 2rem;
+    }
+
+    .app__partnership_partner-heading {
+        margin: 0 0 2rem;
+    }
+
+    .app__partnership_partner-subheading {
+        margin: 2rem 0 2rem;
     }
 }

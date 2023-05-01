@@ -17,29 +17,21 @@ const Events = () => {
                         {/* <img src={images.Events_Image} alt="SnapLogic Event" /> */}
                     </div>
 
-                    <p className="app__events-content_info p__subheading">
-                        SnapLogic Academy Launch Event
-                        <br></br>
-                        <br></br>
-                        6<sup>th</sup> May 2023, 11:00 AM
-                        <br></br>
-                        <br></br>
-                        Venues: 
-                        <br></br>
-                        <span>
-                            <b>Mumbai</b> : Hyatt Centric Juhu
+                    <div className="app__events-content_info">
+                        <p className="app__event-content_info-title p__subheading">
+                            SL EduSeries - ETL &  Integration Job Seminar
+                        </p>
+                        <p className="app__events-content_info-details p__paragraph">
                             <br></br>
-                            <b>Bangalore</b> : Hyatt Centric MG Road Bangalore
+                            <span className='p__paragraph'>11:00 am - 04:00 pm | 6th May 2023</span>
                             <br></br>
-                            <b>Hyderabad</b> : Hyatt Place, Banjara Hills
                             <br></br>
-                            <b>Delhi NCR</b> : Hyatt Place Gurgaon
+                            Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
                             <br></br>
-                            <b>Pune</b> : Courtyard by Marriott Pune, Hinjewadi
                             <br></br>
-                            <b>Chennai</b> : Novotel Chennai Chamiers Road Hotel
-                        </span>
-                    </p>
+                            The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+                        </p>
+                    </div>
 
                 </div>
 

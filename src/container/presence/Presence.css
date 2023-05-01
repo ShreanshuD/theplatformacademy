@@ -9,7 +9,7 @@
 }
 
 .app__presence_information-title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: var(--color-blue);
     font-size: 45px;
     font-weight: 600;
@@ -20,7 +20,7 @@
 }
 
 .app__presence_information-cities_listitem {
-    width: 82%;
+    width: 65%;
     margin-bottom: 1rem;
     padding: 1rem 2rem;
     border-radius: 4px;
@@ -39,14 +39,34 @@
 }
 
 .app__presence_map {
-    width: 50%;
+    width: 45%;
 }
+
+/* .app__presence_map img {
+    cursor: pointer;
+} */
 
 
 
 @media screen and (min-width: 2000px) {
     .app__presence_information-title {
-        font-size: 70px;
+        font-size: 55px;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 60%;
+    }
+
+    .app__presence_map {
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width: 1680px) {
+    .app__presence_information-cities_listitem {
+        width: 80%;
     }
 }
 
@@ -81,9 +101,21 @@
 
 
 
+@media screen and (max-width: 1280px) {
+    .app__presence_information-cities_listitem {
+        width: 45%;
+    }
+}
+
+
+
 @media screen and (max-width: 1150px) {
     .app__presence_information-cities_listitem {
-        width: 50%;
+        width: 60%;
+    }
+
+    .app__presence_map {
+        width: 80%;
     }
 }
 
@@ -98,20 +130,33 @@
 
 
 @media screen and (max-width: 850px) {
+    .app__presence_information-title {
+        font-size: 45px;
+    }
+
     .app__presence_information {
         width: 120%;
         transform: scale(0.8);
     }
 
     .app__presence_map {
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 3rem;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 70%;
     }
 }
 
 
 
 @media screen and (max-width: 680px) {
+    .app__presence_information-title {
+        font-size: 35px;
+        margin-bottom: 3rem;
+    }
+
     .app__presence_information {
         width: 160%;
         margin-bottom: -8rem;
@@ -119,7 +164,12 @@
     }
 
     .app__presence_map {
+        width: 90%;
         margin-bottom: -3rem;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 60%;
     }
 }
 
@@ -128,19 +178,21 @@
 @media screen and (max-width: 580px) {
     .app__presence_information {
         width: 200%;
+        margin-left: 7rem;
+        margin-bottom: -5rem;
         transform: scale(0.6);
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 50%;
     }
 }
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     .app__presence_information {
-        margin-left: 5rem;
-    }
-
-    .app__presence_information {
-        margin-left: 3rem;
+        margin-left: 6rem;
     }
 }
 
@@ -152,18 +204,34 @@
     }
 
     .app__presence_information-title {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .app__presence_information-cities_listitem {
+        width: 70%;
     }
 }
 
 
 
 @media screen and (max-width: 400px) {
+    .app__presence_information-title {
+        font-size: 26px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
     .app__presence_information {
         margin-left: 2rem;
     }
+}
 
-    .app__presence_information-cities_listitem {
-        width: 80%;
+
+
+@media screen and (max-width: 320px) {
+    .app__presence_information {
+        margin-left: 4rem;
     }
 }

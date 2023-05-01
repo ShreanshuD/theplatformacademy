@@ -1,6 +1,6 @@
 .app__learningcard {
-    width: 90%;
-    margin-bottom: 6.5rem;
+    width: 100%;
+    margin-bottom: 4rem;
     padding: 1.6rem 1rem 1em;
     background-color: var(--color-white);
     border-radius: 6px;
@@ -22,7 +22,7 @@
 }
 
 .app__learningcard_illustration {
-    width: 30%;
+    width: 27.6%;
 }
 
 .app__learningcard_information {
@@ -35,11 +35,11 @@
 }
 
 .app__learningcard_information-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .app__learningcard_information-description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -50,14 +50,14 @@
 .app__learningcard_navigation button {
     width: 100%;
     /* margin-top: 0.6rem; */
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     color: var(--color-blue);
     background-color: var(--color-white);
     outline: none;
     border: none;
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
-    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.1s;
@@ -66,12 +66,12 @@
 .app__learningcard_navigation button:hover {
     transform: scale(1.03);
     transition: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
 }
 
 .app__learningcard_navigation button:active {
     transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 .dropdown_arrow {
@@ -127,29 +127,59 @@
 
 
 
-@media screen and (min-width: 1151px) and (max-width: 1600px) {
+@media screen and (min-width: 2450px) {
+    .app__learningcard {
+        margin-bottom: 5rem;
+    }
+
+    .app__learningcard_illustration {
+        width: 28.5%;
+    }
+
+    .app__learningcard_navigation {
+        width: 40%;
+    }
+
+    .app__learningcard_navigation button {
+        padding: 0.8rem 0;
+        font-size: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 1151px) and (max-width: 1680px) {
     .app__learningcard {
         width: 100%;
     }
 
+    .app__learningcard_illustration {
+        width: 32%;
+    }
+
     .app__learningcard_navigation {
-        width: 55%;
-        margin-top: 2rem;
+        width: 40%;
+        margin-top: 0.9rem;
     }
 }
 
 
 
 @media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .app__learningcard {
+        padding: 2rem;
+    }
+
     .app__learningcard_informationcontainer {
+        margin-bottom: 1rem;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
 
     .app__learningcard_illustration {
-        width: 50%;
-        margin-bottom: 1rem;
+        width: 60%;
+        margin-bottom: 1.2rem;
     }
     
     .app__learningcard_information {
@@ -157,6 +187,11 @@
 
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .app__learningcard_navigation button {
+        padding: 1rem 0;
+        font-size: 18px;
     }
 }
 
@@ -195,20 +230,21 @@
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1320px) {
+@media screen and (min-width: 1280px) and (max-width: 1380px) {
     .app__learningcard {
         margin-bottom: 4rem;
     }
-}
 
+    .app__learningcard_illustration {
+        width: 55%;
+        margin-bottom: 1rem;
+    }
 
-
-@media screen and (min-width: 1250px) and (max-width: 1350px) {
-    .app__learningcard {
-        margin-bottom: 6rem;
+    .app__learningcard_navigation button {
+        padding: 0.8rem 0;
+        font-size: 16px;
     }
 }
-
 
 
 @media screen and (min-width: 1200px) and (max-width: 1250px) {
@@ -256,6 +292,10 @@
 
 
 @media screen and (max-width: 850px) {
+    .app__learningcard {
+        margin-bottom: 4rem;
+    }
+
     .app__learningcard_illustration {
         width: 35%;
     }
@@ -296,6 +336,7 @@
 
 @media screen and (max-width: 650px) {
     .app__learningcard {
+        margin-bottom: 2rem;
         align-items: center;
     }
 
@@ -306,12 +347,12 @@
     }
 
     .app__learningcard_illustration {
-        width: 100%;
+        width: 60%;
         margin-bottom: 2rem;
     }
     
     .app__learningcard_information {
-        width: 100%;
+        width: 90%;
         text-align: center;
 
         justify-content: flex-start;
@@ -319,34 +360,68 @@
     }
 
     .app__learningcard_information-description {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .app__learningcard_navigation {
-        width: 100%;
+        width: 60%;
+        margin-top: 2rem;
     }
 
     .app__learningcard_navigation button {
-        font-size: 18px;
+        padding: 0.4rem 0;
+        font-size: 14px;
     }
 }
 
 
 
 @media screen and (max-width: 450px) {
+    .app__learningcard_illustration {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .app__learningcard_information {
+        width: 100%;
+    }
+    
     .app__learningcard_information-description {
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .app__learningcard_navigation {
-        width: 80%;
+        width: 70%;
     }
 
     .app__learningcard_navigation button {
-        margin-top: 2rem;
-        padding: 0.8rem;
-        font-size: 16px;
+        margin-top: 1rem;
+        padding: 0.6rem;
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__learningcard {
+        margin-bottom: 1rem;
+    }
+
+    .app__learningcard_information-description {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .app__learningcard_navigation button {
+        margin-top: 0rem;
+        padding: 0.6rem;
+        font-size: 12px;
+    }
+
+    .dropdown_arrow {
+        font-size: 24px;
     }
 }

@@ -16,8 +16,8 @@ a {
 .section__padding {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .app__events_bg {
@@ -69,7 +69,7 @@ a {
     font-weight: 600;
     letter-spacing: 0.01em;
     text-transform: capitalize;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 35px;
 }
 
@@ -77,11 +77,11 @@ a {
     width: 100%;
     height: 100%;
     font-family: var(--font-main);
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     line-height: 40px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .p__paragraph {
@@ -90,7 +90,7 @@ a {
     font-family: var(--font-main);
     font-weight: 400;
     letter-spacing: 0.02em;
-    line-height: 28px;
+    line-height: 26px;
     font-size: 20px;
 }
 
@@ -142,15 +142,15 @@ a {
 
 @media screen and (min-width: 2000px) {
     .section__padding {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        padding-left: 12rem;
-        padding-right: 12rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
     .p__navigation {
-        line-height: 50px;
-        font-size: 30px;
+        line-height: 40px;
+        font-size: 28px;
     }
 
     .p__navigation_small {
@@ -159,18 +159,18 @@ a {
     }
 
     .p__heading {
-        line-height: 70px;
-        font-size: 50px;
+        line-height: 50px;
+        font-size: 44px;
     }
 
     .p__subheading {
         line-height: 60px;
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .p__paragraph {
-        line-height: 40px;
-        font-size: 30px;
+        line-height: 34px;
+        font-size: 26px;
     }
 
     .p__large {
@@ -186,7 +186,7 @@ a {
     }
 
     .nav__button {
-        font-size: 40px;
+        font-size: 28px;
     }
 }
 
@@ -203,10 +203,20 @@ a {
 
 @media screen and (min-width: 1151px) and (max-width: 1500px) {
     .section__padding {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+
+    .p__heading {
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .p__subheading {
+        line-height: 30px;
+        font-size: 24px;
     }
 }
 
@@ -238,7 +248,7 @@ a {
 
     .p__subheading {
         line-height: 40px;
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .p__paragraph {
@@ -273,6 +283,11 @@ a {
 
 
 @media screen and (max-width: 850px) {
+    .p__heading {
+        line-height: 40px;
+        font-size: 30px;
+    }
+
     .p__subheading {
         line-height: 30px;
         font-size: 25px;
@@ -299,10 +314,25 @@ a {
 
 @media screen and (max-width: 650px) {
     .section__padding {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .p__heading {
+        line-height: 40px;
+        font-size: 28px;
+    }
+
+    .p__subheading {
+        line-height: 28px;
+        font-size: 22px;
+    }
+
+    .p__paragraph {
+        line-height: 24px;
+        font-size: 16px;
     }
 
     .p__navigation {
@@ -324,20 +354,20 @@ a {
 
 @media screen and (max-width: 450px) {
     .section__padding {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     .p__heading {
-        line-height: 40px;
-        font-size: 28px;
+        line-height: 35px;
+        font-size: 24px;
     }
 
     .p__subheading {
-        line-height: 35px;
-        font-size: 24px;
+        line-height: 28px;
+        font-size: 22px;
     }
 
     .p__large {
@@ -347,22 +377,17 @@ a {
     }
 
     .p__paragraph {
-        line-height: 24px;
-        font-size: 18px;
+        line-height: 22px;
+        font-size: 16px;
     }
-    
-    /* .p__semibold {
-        line-height: 40px;
-        font-size: 30px;
-    } */
 }
 
 
 
 @media screen and (max-width: 400px) {
     .section__padding {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -384,17 +409,17 @@ a {
     }
 
     .p__heading {
-        line-height: 40px;
-        font-size: 26px;
+        line-height: 28px;
+        font-size: 22px;
     }
 
     .p__subheading {
-        line-height: 35px;
-        font-size: 20px;
+        line-height: 20px;
+        font-size: 18px;
     }
 
     .p__paragraph {
-        line-height: 22px;
-        font-size: 16px;
+        line-height: 18px;
+        font-size: 14px;
     }
 }

@@ -53,19 +53,19 @@ const Learning = [
         title: "For Learners",
         description: "Accelerated career | Higher income jobs | Transition ready skills | Futuristic skillset",
         illustration: images.Learn_Learners,
-        navigatinglink: ""
+        navigatinglink: "/learners"
     },
     {
         title: "For System Integrators",
         description: "Business agility | Employee Engagement | Proficiency certificates | Efficient workforce",
         illustration: images.Learn_SystemIntegrators,
-        navigatinglink: ""
+        navigatinglink: "/systemintegrators"
     },
     {
         title: "For Educational Institutes",
         description: "Enhanced Placements | Reputation & Rank | Future-proofed grads | Learning experience",
         illustration: images.Learn_Education,
-        navigatinglink: ""
+        navigatinglink: "/educationalinstitutes"
     }
 ];
 
@@ -1345,6 +1345,74 @@ const SlEduSeries = {
 
 
 
+const BoostYourBusiness = {
+  title: "Boost Your Business With Our Platform!",
+  description: [
+    "Business Readiness",
+    "Efficient Workforce",
+    "Proficiency Stamp",
+    "Community Building",
+    "Hiring Support",
+    "Employee Engagement",
+    "Satisfaction",
+    "Cost Saving"
+  ],
+  navigatingLink: "",
+  image: images.BoostBusinessImage
+};
+
+
+
+const StudentsFutureReady = {
+  title: "Make Your Students Future Ready!",
+  description: [
+    "Improved Placement Statistics",
+    "Incubation Opportunities",
+    "Status Rank",
+    "Better Reputation",
+    "Outcome Enhancements for Students",
+    "Future Ready Graduates",
+    "Better Learning Experience",
+    "Internship Opportunities for Students"
+  ],
+  navigatingLink: "",
+  image: images.StudentsFutureReady
+};
+
+
+
+const BoostYourCareer = {
+  title: "Boost Your Career With Our Platform!",
+  description: [
+    "Transition Ready Skills",
+    "Higher Income Jobs",
+    "Accelerated Career",
+    "Employability Enhancement",
+    "Futuristic Skillset",
+    "Professional Confidence",
+    "Flexible Learning",
+    "Personalized Learning"
+  ],
+  navigatingLink: "",
+  image: images.BoostCareer
+};
+
+
+
+const CustomCourse = {
+  title: "Want a custom course?",
+  description: <>
+    Create a Vibrant community of trained professionals and tech organisations for unlocking the growth and adoption of your platform.
+    <br></br>
+    <br></br>
+    We provide a single point solution to start and grow the education and training of your platform across India.
+  </>,
+  navigatingLink: "",
+  image: images.CustomCourseImage
+}
+
+
+
 export {
     Benefits,
     WhyIndia,
@@ -1355,5 +1423,9 @@ export {
     AllCourses,
     AllCourseDetails,
     LaunchEvent,
-    SlEduSeries
+    SlEduSeries,
+    BoostYourBusiness,
+    StudentsFutureReady,
+    BoostYourCareer,
+    CustomCourse
 };

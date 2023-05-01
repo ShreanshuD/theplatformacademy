@@ -28,8 +28,8 @@
 }
 
 .app__partner-logo {
-    width: 12%;
-    margin: 4rem 0 1rem;
+    width: 10%;
+    margin: 3rem 0 0;
 }
 
 .app__partner-description {
@@ -37,7 +37,7 @@
 }
 
 .app__partner-subheading {
-    margin: 5rem 0 3rem;
+    margin: 3rem 0 1rem;
     color: var(--color-white);
     font-weight: 600;
 }
@@ -52,67 +52,102 @@
     flex-wrap: wrap;
 }
 
-.app__partner-button {
+.app__partner-button,
+.app__courses-button {
     width: 15%;
-    margin: 3rem auto 0;
+    margin: 5rem auto 0;
     display: block;
+    border-radius: 4px;
     transition: 0.1s;
 }
 
-.app__partner-button button {
+.app__courses-button {
+    width: 12%;
+}
+
+.app__partner-button button,
+.app__courses-button button {
     width: 100%;
-    padding: 0.6rem 0;
+    padding: 1rem 0;
     color: var(--color-royalblue);
     background-color: var(--color-white);
     outline: none;
     border: none;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.1s;
 }
 
-.app__partner-button:hover {
+.app__courses-button button {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+.app__partner-button:hover,
+.app__courses-button:hover {
     transform: scale(1.03);
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 }
 
-.app__partner-button:active {
+.app__partner-button:active,
+.app__courses-button:active {
     transform: scale(1);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
 }
 
-.app__partner-button button .dropdown_arrow {
+.app__partner-button button .dropdown_arrow,
+.app__courses-button .dropdown_arrow {
     margin-left: 0.5rem;
     color: var(--color-royalblue);
+}
+
+.app__courses-button button .dropdown_arrow {
+    color: var(--color-white);
 }
 
 
 
 @media screen and (min-width: 2000px) {
     .app__partner-logo {
-        width: 13%;
-        margin: 5rem 0 2rem;
+        width: 12%;
     }
 
     .app__partner-button {
-        width: 18%;
+        width: 16%;
     }
     
-    .app__partner-button button {
+    .app__partner-button button,
+    .app__courses-button button {
         padding: 1.2rem 0;
-        font-size: 30px;
+        font-size: 28px;
+    }
+}
+
+
+
+@media screen and (min-width: 1400px) and (max-width: 1680px) {
+    .app__partner-logo {
+        width: 12%;
     }
 }
 
 
 
 @media screen and (min-width: 1151px) and (max-width: 1400px) {
+    .app__partner-logo {
+        width: 14%;
+    }
+
     .app__partner-button {
-        width: 24%;
+        width: 20%;
+    }
+
+    .app__courses-button {
+        width: 15%;
     }
 }
 
@@ -120,15 +155,20 @@
 
 @media screen and (max-width: 1150px) {
     .app__partner-logo {
-        width: 22%;
+        width: 18%;
     }
 
     .app__partner-button {
         width: 26%;
     }
+
+    .app__courses-button {
+        width: 22%;
+    }
     
-    .app__partner-button button {
-        font-size: 22px;
+    .app__partner-button button,
+    .app__courses-button button {
+        font-size: 20px;
     }
 }
 
@@ -136,14 +176,19 @@
 
 @media screen and (max-width: 850px) {
     .app__partner-logo {
-        width: 28%;
+        width: 26%;
     }
 
     .app__partner-button {
         width: 34%;
     }
 
-    .app__partner-button button {
+    .app__courses-button {
+        width: 30%;
+    }
+
+    .app__partner-button button,
+    .app__courses-button button {
         padding: 1rem 0;
     }
 }
@@ -152,27 +197,21 @@
 
 @media screen and (max-width: 650px) {
     .app__partner-logo {
-        width: 60%;
+        width: 32%;
+        margin: 2rem 0 0;
     }
 
     .app__partner-button {
-        width: 50%;
+        width: 44%;
+        margin: 3rem auto 0;
     }
 
-    .app__partner-button button {
-        padding: 0.8rem 0;
-        font-size: 18px;
-    }
-}
-
-
-
-@media screen and (max-width: 450px) {
-    .app__partner-logo {
-        width: 70%;
+    .app__courses-button {
+        width: 32%;
     }
 
-    .app__partner-button button {
+    .app__partner-button button,
+    .app__courses-button button {
         padding: 0.8rem 0;
         font-size: 16px;
     }
@@ -180,12 +219,32 @@
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     .app__partner-logo {
-        width: 60%;
+        width: 44%;
     }
 
-    .app__partner-button button {
-        font-size: 18px;
+    .app__partner-button {
+        width: 50%;
+    }
+
+    .app__courses-button {
+        width: 40%;
+        margin: 3rem auto 0;
+    }
+
+    .app__partner-button button,
+    .app__courses-button button {
+        padding: 0.6rem 0;
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .app__partner-button button,
+    .app__courses-button button {
+        font-size: 14px;
     }
 }

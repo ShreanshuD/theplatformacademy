@@ -1,24 +1,25 @@
 .app__illustrationcard {
     width: 30%;
     min-height: 200px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     flex-direction: column;
     border-radius: 6px;
-    /* box-shadow: rgba(47, 159, 226, 0.35) 0px 5px 15px; */
-    box-shadow: rgba(123, 185, 221, 0.2) 0px 10px 20px, rgba(123, 185, 221, 0.1) 0px 6px 6px;
+    background-color: var(--color-white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(123, 185, 221, 0.2) 0px 10px 20px, rgba(123, 185, 221, 0.1) 0px 6px 6px; */
     transform: 0.1s;
 }
 
 .app__illustrationcard_illustration {
     width: 80px;
-    margin: 2rem 0 1rem;
+    margin: 1rem 0 1rem;
 }
 
 .app__illustrationcard_title {
     width: 70%;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -27,6 +28,7 @@
 @media screen and (min-width: 2000px) {
     .app__illustrationcard {
         min-height: 280px;
+        margin-bottom: 3.2rem;
         border-radius: 8px;
     }
 
@@ -49,6 +51,11 @@
         width: 45%;
         margin: 0 0.4rem 1rem;
         min-height: 230px;
+    }
+
+    .app__illustrationcard_title {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -78,16 +85,16 @@
 
 @media screen and (max-width: 850px) {
     .app__illustrationcard {
-        min-height: 230px;
+        min-height: 200px;
     }
 
     .app__illustrationcard_illustration {
-        width: 100px;
+        width: 80px;
     }
     
     .app__illustrationcard_title {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -97,7 +104,7 @@
     .app__illustrationcard {
         width: 45%;
         min-height: 180px;
-        margin: 0 0.4rem 1rem;
+        margin: 0 0.45rem 1rem;
     }
 
     .app__illustrationcard:nth-child(2) {
@@ -109,8 +116,8 @@
     }
     
     .app__illustrationcard_title {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -125,13 +132,27 @@
 
 
 
+@media screen and (max-width: 380px) {
+    .app__illustrationcard {
+        width: 40%;
+    }
+
+    .app__illustrationcard_title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+
 @media screen and (max-width: 350px) {
     .app__illustrationcard {
-        min-height: 180px;
+        width: 80%;
+        min-height: 160px;
     }
     
     .app__illustrationcard_title {
         font-size: 12px;
-        line-height: 20px;
+        line-height: 16px;
     }
 }

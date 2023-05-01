@@ -6,7 +6,7 @@
 }
 
 .app__featurecard-illustration {
-    width: 6rem;
+    width: 5rem;
     margin-right: 2rem;
 }
 
@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 2000px) {
     .app__featurecard-illustration {
-        width: 8rem;
+        width: 6rem;
     }
 }
 
@@ -30,7 +30,7 @@
     }
     
     .app__featurecard-illustration {
-        width: 7rem;
+        width: 4rem;
     }
 }
 
@@ -45,7 +45,7 @@
     }
     
     .app__featurecard-illustration {
-        width: 5rem;
+        width: 3.5rem;
         margin: auto;
     }
 

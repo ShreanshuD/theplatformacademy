@@ -39,11 +39,11 @@ const Footer = () => {
                     <div className="app__footer_content-tpa">
                         <p className="p__subheading">The Platform Academy</p>
                         <Link to="/underconstruction" className="p__paragraph">Careers</Link>
-                        <Link to="/underconstruction" className="p__paragraph">For Learners</Link>
-                        <Link to="/underconstruction" className="p__paragraph">For System Integrators</Link>
-                        <Link to="/underconstruction" className="p__paragraph">For Educational Institutes</Link>
+                        <Link to="/learners" className="p__paragraph">For Learners</Link>
+                        <Link to="/systemintegrators" className="p__paragraph">For System Integrators</Link>
+                        <Link to="/educationalinstitutes" className="p__paragraph">For Educational Institutes</Link>
                         <Link to="/courses" className="p__paragraph">Courses</Link>
-                        <Link to="/underconstruction" className="p__paragraph">Events</Link>
+                        <Link to="/event" className="p__paragraph">Events</Link>
                     </div>
 
                     <div className="app__footer_content-more">

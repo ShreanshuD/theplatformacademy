@@ -1,0 +1,273 @@
+.app__customcard {
+    width: 100%;
+
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.app__customcard-info {
+    width: 45%;
+    height: 30rem;
+    padding: 5rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+.app__customcard-info-title {
+    width: 100%;
+    margin-bottom: -16rem;
+}
+
+.app__customcard-info-description {
+    width: 100%;
+    list-style-type: none;
+}
+
+.app__customcard-info-contactus {
+    width: 30%;
+    margin: -7rem 0 0;
+    display: block;
+    float: right;
+}
+
+.app__customcard-info-contactus button {
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.app__customcard-info-contactus button:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.app__customcard-info-contactus button:active {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.app__customcard-image {
+    width: 55%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.app__customcard-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__customcard-info {
+        height: 36rem;
+    }
+    
+    .app__customcard-info-title {
+        margin-bottom: -20rem;
+    }
+
+    .app__customcard-info-contactus {
+        width: 30%;
+        margin: -10rem 0 0;
+    }
+
+    .app__customcard-info-contactus button {
+        width: 100%;
+        padding: 1.4rem 0;
+        font-size: 30px;
+    } 
+    
+    .app__customcard-image {
+        height: 36rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+    .app__customcard-info {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -20rem;
+    }
+
+    .app__customcard-info-contactus {
+        width: 40%;
+        margin: -8rem 0 0;
+    }
+
+    .app__customcard-info-contactus button {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) and (max-width: 1400px) {
+    .app__customcard-info {
+        height: 30rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -20rem;
+    }
+
+    .app__customcard-info-contactus button {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 22px;
+    }
+
+    .app__customcard-image {
+        height: 30rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__customcard {
+        flex-direction: column-reverse;
+    }
+
+    .app__customcard-info {
+        width: 100%;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -15rem;
+    }
+
+    .app__customcard-image {
+        width: 100%;
+    }
+
+    .app__customcard-info-contactus {
+        width: 25%;
+    }
+
+    .app__customcard-info-contactus button {
+        margin-top: 1rem;
+        padding: 1.2rem 0;
+        font-size: 24px;
+    }
+
+    .app__customcard-image {
+        height: 20rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__customcard-info {
+        height: 25rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .app__customcard-info-contactus button {
+        margin-top: 1rem;
+        padding: 1rem 0;
+        font-size: 22px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__customcard-info-title {
+        margin-bottom: -15rem;
+    }
+
+    .app__customcard-info-contactus {
+        width: 35%;
+        margin: -8rem 0 0;
+        float: left;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .app__customcard-info {
+        height: 28rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -18rem;
+    }
+
+    .app__customcard-image {
+        height: 16rem;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__customcard-info {
+        height: 26rem;
+        padding: 3rem 2rem 3rem 3rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -16rem;
+    }
+
+    .app__customcard-info-contactus {
+        width: 50%;
+        margin: -7rem 0 0;
+    }
+
+    .app__customcard-info-contactus button {
+        margin-top: 0;
+        padding: 1rem 0;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app__customcard-info {
+        height: 28rem;
+        padding: 3rem 1rem 3rem 2rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -18rem;
+    }
+
+    .app__customcard-info-contactus {
+        margin: -7rem 0 0;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .app__customcard-info {
+        height: 26rem;
+    }
+
+    .app__customcard-info-title {
+        margin-bottom: -15rem;
+    }
+}

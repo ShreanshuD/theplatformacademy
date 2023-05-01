@@ -21,7 +21,7 @@ const LearningCard = ( {title, illustration, description, navigatinglink} ) => {
                     </div>
                 </div>
                 <div className="app__learningcard_navigation">
-                    <Link to="" className="app__learningcard_navigation-navigatinglink">
+                    <Link to={navigatinglink} className="app__learningcard_navigation-navigatinglink">
                         <button type='button' className='flex__center p__paragraph'>Learn More <MdOutlineKeyboardArrowDown className='dropdown_arrow' /></button>
                     </Link>
                 </div>

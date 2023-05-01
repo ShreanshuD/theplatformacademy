@@ -11,7 +11,7 @@ const Home = () => {
             <Partnership />
             <Features />
             <Presence />
-            <TopPartner />
+            <TopPartner type="top_partner" />
             <Events />
             <Footer />
         </>

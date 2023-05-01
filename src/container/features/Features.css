@@ -13,13 +13,13 @@
 
 .app__features-heading {
     width: 100%;
-    margin: 1rem 0 0 3.8rem;
+    margin: 0rem 0 0 3.5rem;
     text-align: left;
 }
 
 .app__features-container {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@
     }
 
     .app__features-heading {
-        margin: 0rem 0 0 0;
+        margin: 0rem 0 -1.5rem 0;
         text-align: center;
     }
 }

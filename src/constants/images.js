@@ -65,6 +65,12 @@ import BookmarkIcon from '../assets/icon/bookmark_icon.svg';
 import CalendarIcon from '../assets/icon/calendar_icon.svg';
 import LocationIcon from '../assets/icon/location_icon.svg';
 
+import BoostBusinessImage from '../assets/images/BoostBusiness.svg';
+import StudentsFutureReady from '../assets/images/StudentsFutureReady.svg';
+import BoostCareer from '../assets/images/BoostCareer.svg';
+
+import CustomCourseImage from '../assets/images/CustomCourse.svg';
+
 
 
 export default {
@@ -133,5 +139,11 @@ export default {
 
     BookmarkIcon,
     CalendarIcon,
-    LocationIcon
+    LocationIcon,
+
+    BoostBusinessImage,
+    StudentsFutureReady,
+    BoostCareer,
+
+    CustomCourseImage
 };

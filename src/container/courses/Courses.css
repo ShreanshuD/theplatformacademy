@@ -4,7 +4,7 @@
 }
 
 .app__allcourses-heading {
-    margin: 5rem 0 5rem;
+    margin: 4rem 0 4rem;
 }
 
 .app__allcourses-coursecontainer {
@@ -15,6 +15,22 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__allcourses-heading {
+        margin: 5rem 0 4rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .app__allcourses-heading {
+        margin: 4rem 0 3rem;
+    }
 }
 
 
