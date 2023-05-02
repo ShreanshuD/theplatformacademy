@@ -63,7 +63,7 @@ const NavBar = () => {
                                     Courses
                                 </p>
                             </Link>
-                            <Link to='/underconstruction' className={navigation.aboutUs ? "app__navbar_navigations-menu shift__down_aboutUs" : "app__navbar_navigations-menu"} onMouseEnter={ () => ChangeDropDown('aboutUs', true) } onMouseLeave={ () => ChangeDropDown('aboutUs', false) }>
+                            <Link className={navigation.aboutUs ? "app__navbar_navigations-menu shift__down_aboutUs" : "app__navbar_navigations-menu"} onMouseEnter={ () => ChangeDropDown('aboutUs', true) } onMouseLeave={ () => ChangeDropDown('aboutUs', false) }>
                                 <p className="p__navigation flex__center">
                                     About Us
                                     {
@@ -80,21 +80,21 @@ const NavBar = () => {
 
                                     <>
                                         <p className="p__navigation_small flex__center">
-                                            Events
+                                            <Link to='/event' className='p__navigation_small'>Events</Link>
                                         </p>
                                         <p className="p__navigation_small flex__center">
-                                            Contact Us
+                                            <Link to='/contactus' className='p__navigation_small'>Contact Us</Link>
                                         </p>
                                         <p className="p__navigation_small flex__center">
-                                            In News
+                                            <Link to='/underconstruction' className='p__navigation_small'>In News</Link>
                                         </p>
                                         <p className="p__navigation_small flex__center">
-                                            Blogs
+                                            <Link to='/underconstruction' className='p__navigation_small'>Blogs</Link>
                                         </p>
                                     </>
                                 }
                             </Link>
-                            <Link to='/underconstruction' className={navigation.whyUs ? "app__navbar_navigations-menu shift__down_whyUs" : "app__navbar_navigations-menu"} onMouseEnter={ () => ChangeDropDown('whyUs', true) } onMouseLeave={ () => ChangeDropDown('whyUs', false) }>
+                            <Link className={navigation.whyUs ? "app__navbar_navigations-menu shift__down_whyUs" : "app__navbar_navigations-menu"} onMouseEnter={ () => ChangeDropDown('whyUs', true) } onMouseLeave={ () => ChangeDropDown('whyUs', false) }>
                                 <p className="p__navigation flex__center">
                                     Why Us
                                     {
@@ -111,13 +111,13 @@ const NavBar = () => {
                                     
                                     <>
                                         <p className="p__navigation_small flex__center">
-                                            For Learners
+                                            <Link to='/learners' className='p__navigation_small'>For Learners</Link>
                                         </p>
                                         <p className="p__navigation_small flex__center">
-                                            For System Integrators
+                                            <Link to='/systemintegrators' className='p__navigation_small'>For System Integrators</Link>
                                         </p>
                                         <p className="p__navigation_small flex__center">
-                                            For Educational Institutes
+                                            <Link to='/educationalinstitutions' className='p__navigation_small'>For Educational Institutes</Link>
                                         </p>
                                     </>
                                 }
@@ -141,7 +141,7 @@ const NavBar = () => {
                     <div className="app__navbar_overlay-navigations flex__center">
                         <Link to='/courses' className="app__navbar_navigations-menu" onClick={ () => setMenuOverlay(false) }>
                             <p className="p__navigation flex__center">
-                                Courses
+                                <Link to='/courses' className='p__navigation'>Courses</Link>
                             </p>
                         </Link>
                         <Link to='/underconstruction' className="app__navbar_navigations-menu" onClick={ () => setMenuOverlay(false) }>

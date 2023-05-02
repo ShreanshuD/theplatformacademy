@@ -11,38 +11,39 @@
 }
 
 .app__notfound-illustration {
-    width: 30%;
+    width: 25%;
 }
 
 .app__notfound-heading {
-    width: 50%;
-    margin: 1rem 0 0.5rem;
+    width: 40%;
+    margin: 2rem 0 0.5rem;
     text-align: center;
     font-size: 80px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--color-blue);
     text-transform: initial;
 }
 
 .app__notfound-subheading {
-    width: 50%;
+    width: 40%;
     margin: 1rem 0 3rem;
     text-align: center;
+    font-weight: 600;
     color: var(--color-blue);
     text-transform: initial;
 }
 
 .app__notfound-button {
-    width: 18%;
+    width: 13%;
     /* margin: 5rem auto 0; */
     display: block;
     border-radius: 4px;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .app__notfound-button button {
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     color: var(--color-black);
     background-color: var(--color-white);
     outline: none;
@@ -52,7 +53,7 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .app__notfound-button:hover {
@@ -94,48 +95,81 @@
 
 @media screen and (min-width: 2000px) {
     .app__notfound-button {
-        width: 20%;
-        margin-top: 5rem;
+        width: 16%;
+        margin-top: 3rem;
     }
 
     .app__notfound-button button {
-        padding: 2rem 0;
+        padding: 1.6rem 0;
         font-size: 30px;
     }
 }
 
 
 
-@media screen and (min-width: 1150px) and (max-width: 1500px) {
+@media screen and (max-width: 1680px) {
+    .app__notfound-button {
+        width: 17%;
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) {
     .app__notfound-illustration {
-        width: 60%;
+        width: 30%;
     }
 
     .app__notfound-heading {
-        width: 60%;
+        width: 50%;
+        margin: 2rem 0 1rem;
+    }
+
+    .app__notfound-subheading {
+        width: 50%;
     }
     
     .app__notfound-button {
-        width: 28%;
-        margin-top: 5rem;
+        width: 18%;
+        margin-top: 0rem;
     }
 
     .app__notfound-button button {
-        padding: 2rem 0;
-        font-size: 24px;
+        padding: 1.2rem 0;
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1380px) {
+    .app__notfound-illustration {
+        width: 30%;
+    }
+
+    .app__notfound-button {
+        width: 16%;
+    }
+
+    .app__notfound-button button {
+        font-size: 16px;
     }
 }
 
 
 
 @media screen and (max-width: 1150px) {
+    .app__notfound {
+        min-height: auto;
+    }
+
     .app__notfound-illustration {
-        width: 80%;
+        width: 45%;
     }
 
     .app__notfound-heading {
         width: 60%;
-        margin: 2rem 0 3rem;
     }
 
     .app__notfound-subheading {
@@ -143,13 +177,21 @@
     }
 
     .app__notfound-button {
-        width: 40%;
-        margin-top: 5rem;
+        width: 20%;
+        margin-top: 1rem;
     }
 
     .app__notfound-button button {
-        padding: 2rem 0;
-        font-size: 24px;
+        padding: 1.2rem 0;
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .app__notfound-illustration {
+        width: 45%;
     }
 }
 
@@ -157,12 +199,12 @@
 
 @media screen and (max-width: 850px) {
     .app__notfound-illustration {
-        width: 80%;
+        width: 50%;
     }
 
     .app__notfound-heading {
         width: 80%;
-        margin: 2rem 0 3rem;
+        margin: 2rem 0 1rem;
     }
 
     .app__notfound-subheading {
@@ -170,8 +212,7 @@
     }
 
     .app__notfound-button {
-        width: 60%;
-        margin-top: 5rem;
+        width: 30%;
     }
 }
 
@@ -179,19 +220,66 @@
 
 @media screen and (max-width: 650px) {
     .app__notfound-illustration {
-        width: 100%;
+        width: 60%;
     }
 
     .app__notfound-heading {
         width: 100%;
+        font-size: 60px;
     }
 
     .app__notfound-button {
-        width: 80%;
+        width: 37%;
     }
 
     .app__notfound-button button {
-        padding: 2rem 0;
-        font-size: 18px;
+        padding: 1rem 0;
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .app__notfound-illustration {
+        width: 80%;
+    }
+
+    .app__notfound-heading {
+        font-size: 60px;
+    }
+
+    .app__notfound-button {
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .app__notfound-illustration {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .app__notfound-heading {
+        width: 100%;
+        margin: 1rem 0 1rem;
+    }
+
+    .app__notfound-button {
+        width: 48%;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app__notfound-heading {
+        font-size: 50px;
+    }
+
+    .app__notfound-button {
+        width: 60%;
     }
 }

@@ -16,7 +16,7 @@
 
 .app__infocard-info-title {
     width: 80%;
-    margin-bottom: -23rem;
+    margin-bottom: 2rem;
 }
 
 .app__infocard-info-description {
@@ -86,10 +86,6 @@
         height: 50rem;
         padding: 7rem 6rem 5rem 8rem;
     }
-    
-    .app__infocard-info-title {
-        margin-bottom: -30rem;
-    }
 
     .app__infocard-info-register {
         width: 30%;
@@ -132,10 +128,6 @@
         padding: 5rem 0 5rem 2rem;
     }
 
-    .app__infocard-info-title {
-        margin-bottom: -23rem;
-    }
-
     .app__infocard-info-register {
         width: 35%;
     }
@@ -161,11 +153,7 @@
 
     .app__infocard-info {
         width: 100%;
-        padding: 5rem 4rem 5rem 8rem;
-    }
-
-    .app__infocard-info-title {
-        margin-bottom: -23rem;
+        padding: 5rem 4rem 5rem 5rem;
     }
 
     .app__infocard-image {
@@ -186,23 +174,10 @@
 
 
 
-@media screen and (max-width: 1000px) {
-    .app__infocard-info-title {
-        width: 100%;
-        margin-bottom: -25rem;
-    }
-}
-
-
-
 @media screen and (max-width: 850px) {
     .app__infocard-info {
         height: 36rem;
         padding: 5rem 3rem 5rem 6rem;
-    }
-
-    .app__infocard-info-title {
-        margin-bottom: -22rem;
     }
 
     .app__infocard-info-register button {
@@ -221,10 +196,6 @@
     .app__infocard-info {
         height: 35rem;
         padding: 3rem 2rem 5rem 3rem;
-    }
-
-    .app__infocard-info-title {
-        margin-bottom: -21rem;
     }
 
     .app__infocard-info-register {
@@ -246,10 +217,6 @@
         padding: 3rem 1rem 3rem 2rem;
     }
 
-    .app__infocard-info-title {
-        margin-bottom: -22rem;
-    }
-
     .app__infocard-info-register {
         width: 50%;
         margin-top: 2rem;
@@ -265,7 +232,7 @@
 
 @media screen and (max-width: 480px) {
     .app__infocard-info {
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 2rem 0rem 2rem 1rem;
     }
 }
 
@@ -274,15 +241,16 @@
 @media screen and (max-width: 450px) {
     .app__infocard-info {
         height: 30rem;
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 1rem 1rem 1rem 2rem;
     }
 
     .app__infocard-info-title {
-        margin-bottom: -20rem;
+        margin-bottom: 1rem;
     }
 
     .app__infocard-info-description li {
         font-size: 12px;
+        margin-bottom: 0.3rem;
     }
 
     .app__infocard-info-description li::before {
@@ -292,7 +260,7 @@
 
     .app__infocard-info-register {
         width: 50%;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .app__infocard-info-register button {
@@ -309,10 +277,6 @@
         padding: 1rem 1rem 1rem 2rem;
     }
 
-    .app__infocard-info-title {
-        margin-bottom: -21rem;
-    }
-
     .app__infocard-info-register button {
         padding: 0.8rem 0;
         font-size: 18px;
@@ -326,8 +290,9 @@
 
 
 @media screen and (max-width: 320px) {
-    .app__infocard-info-title {
-        margin-bottom: -22rem;
+    .app__infocard-info {
+        height: 28rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 
     .app__infocard-info-register button {

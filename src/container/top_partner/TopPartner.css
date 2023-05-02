@@ -3,6 +3,7 @@
     background-color: var(--color-royalblue);
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 .snaplogic__monogram_top {

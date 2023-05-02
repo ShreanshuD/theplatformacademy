@@ -15,7 +15,7 @@
 
 .app__customcard-info-title {
     width: 100%;
-    margin-bottom: -16rem;
+    margin-bottom: 2rem;
 }
 
 .app__customcard-info-description {
@@ -25,7 +25,7 @@
 
 .app__customcard-info-contactus {
     width: 30%;
-    margin: -7rem 0 0;
+    margin: 3rem 0 0;
     display: block;
     float: right;
 }
@@ -73,14 +73,10 @@
     .app__customcard-info {
         height: 36rem;
     }
-    
-    .app__customcard-info-title {
-        margin-bottom: -20rem;
-    }
 
     .app__customcard-info-contactus {
         width: 30%;
-        margin: -10rem 0 0;
+        margin: 5rem 0 0;
     }
 
     .app__customcard-info-contactus button {
@@ -98,16 +94,12 @@
 
 @media screen and (min-width: 1400px) and (max-width: 1700px) {
     .app__customcard-info {
-        padding: 3rem 5rem 3rem 5rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -20rem;
+        padding: 4rem 5rem 3rem 5rem;
     }
 
     .app__customcard-info-contactus {
         width: 40%;
-        margin: -8rem 0 0;
+        margin: 3rem 0 0;
     }
 
     .app__customcard-info-contactus button {
@@ -123,10 +115,6 @@
     .app__customcard-info {
         height: 30rem;
         padding: 3rem 3rem 3rem 3rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -20rem;
     }
 
     .app__customcard-info-contactus button {
@@ -149,10 +137,6 @@
 
     .app__customcard-info {
         width: 100%;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -15rem;
     }
 
     .app__customcard-image {
@@ -192,13 +176,9 @@
 
 
 @media screen and (max-width: 650px) {
-    .app__customcard-info-title {
-        margin-bottom: -15rem;
-    }
-
     .app__customcard-info-contactus {
         width: 35%;
-        margin: -8rem 0 0;
+        margin: 2rem 0 0;
         float: left;
     }
 }
@@ -208,10 +188,6 @@
 @media screen and (max-width: 480px) {
     .app__customcard-info {
         height: 28rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -18rem;
     }
 
     .app__customcard-image {
@@ -224,16 +200,12 @@
 @media screen and (max-width: 450px) {
     .app__customcard-info {
         height: 26rem;
-        padding: 3rem 2rem 3rem 3rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -16rem;
+        padding: 2rem 2rem 2rem 2rem;
     }
 
     .app__customcard-info-contactus {
         width: 50%;
-        margin: -7rem 0 0;
+        margin: 3rem 0 0;
     }
 
     .app__customcard-info-contactus button {
@@ -248,15 +220,11 @@
 @media screen and (max-width: 360px) {
     .app__customcard-info {
         height: 28rem;
-        padding: 3rem 1rem 3rem 2rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -18rem;
+        padding: 2rem 1rem 2rem 2rem;
     }
 
     .app__customcard-info-contactus {
-        margin: -7rem 0 0;
+        margin: 1rem 0 0;
     }
 }
 
@@ -265,9 +233,5 @@
 @media screen and (max-width: 320px) {
     .app__customcard-info {
         height: 26rem;
-    }
-
-    .app__customcard-info-title {
-        margin-bottom: -15rem;
     }
 }

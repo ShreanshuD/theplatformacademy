@@ -1158,7 +1158,44 @@ const AllCourseDetails = [
 
 
 
-const LaunchEvent = {
+const EventList = [
+  {
+    id: "GaianEvent01_SLEdu",
+    title: "SL EduSeries - ETL &  Integration Job Seminar",
+    description: <>
+      <br></br>
+      <br></br>
+      <span className='p__paragraph'>11:00 am - 04:00 pm | 6th May 2023</span>
+      <br></br>
+      <br></br>
+      Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
+      <br></br>
+      <br></br>
+      The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+    </>,
+    image: images.SLEdu_Events_Image
+  },
+  {
+    id: "GaianEvent02_SLEdu",
+    title: "SL EduSeries - ETL &  Integration Job Seminar",
+    description: <>
+      <br></br>
+      <br></br>
+      <span className='p__paragraph'>11:00 am - 04:00 pm | 6th May 2023</span>
+      <br></br>
+      <br></br>
+      Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
+      <br></br>
+      <br></br>
+      The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+    </>,
+    image: images.SLEdu_Events_Image
+  },
+];
+
+
+
+const TPALaunchEvent = {
   eventTitle: "Launch Event - The Platform Academy",
   eventType: "Launch Event",
   eventDate: "6th May 2023 | 09:00 AM IST",
@@ -1422,7 +1459,8 @@ export {
     TopCourses,
     AllCourses,
     AllCourseDetails,
-    LaunchEvent,
+    EventList,
+    TPALaunchEvent,
     SlEduSeries,
     BoostYourBusiness,
     StudentsFutureReady,

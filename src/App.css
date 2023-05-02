@@ -39,8 +39,6 @@ a {
 }
 
 .p__navigation {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     color: var(--color-blue);
     font-weight: 500;
@@ -51,8 +49,6 @@ a {
 }
 
 .p__navigation_small {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     color: var(--color-blue);
     font-weight: 500;
@@ -63,8 +59,6 @@ a {
 }
 
 .p__heading {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -74,8 +68,6 @@ a {
 }
 
 .p__subheading {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     font-weight: 500;
     letter-spacing: 0.01em;
@@ -85,8 +77,6 @@ a {
 }
 
 .p__paragraph {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -104,8 +94,6 @@ a {
 }
 
 .p__semibold {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-main);
     color: var(--color-blue);
     font-weight: 600;
@@ -117,7 +105,7 @@ a {
 
 .nav__button {
     padding: 0.8rem 1.8rem;
-    background-color: var(--color-blue);
+    background-color: var(--color-darkblue);
     border: none;
     border-radius: 4px;
     outline: none;
@@ -130,7 +118,7 @@ a {
 }
 
 .nav__button:hover {
-    background-color: var(--color-royalblue);
+    background-color: var(--color-blue);
 }
 
 .nav__button:active {
@@ -272,6 +260,11 @@ a {
 
 
 @media screen and (max-width: 1000px) {
+    .p__paragraph {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
     .p__large {
         font-size: 48px;
         line-height: 60px;
@@ -295,7 +288,7 @@ a {
 
     .p__paragraph {
         line-height: 24px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .p__large {
@@ -331,7 +324,7 @@ a {
     }
 
     .p__paragraph {
-        line-height: 24px;
+        line-height: 22px;
         font-size: 16px;
     }
 

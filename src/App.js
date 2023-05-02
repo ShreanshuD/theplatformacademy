@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Home, SnaplogicCourses, LaunchEvent, SystemIntegratorsInfo, EducationalInstitutesInfo, LearnersInfo, Construction, Error } from "./routes";
+import { Snaplogic } from './container';
 import ScrollToTop from './constants/ScrollToTop';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/systemintegrators' element={ <SystemIntegratorsInfo /> } />
           <Route path='/educationalinstitutes' element={ <EducationalInstitutesInfo /> } />
           <Route path='/learners' element={ <LearnersInfo /> } />
+          <Route path='/course' element={ <><Snaplogic type="SnapLogicInfo" /> <Snaplogic type="CoursesOffered" /></> } />
           <Route path='/underconstruction' element={ <Construction /> } />
           <Route path='/*' element={ <Error /> } />
         </Routes>

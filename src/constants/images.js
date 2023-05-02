@@ -44,7 +44,7 @@ import Course_Integration from '../assets/illustrations/Course_Integration.svg';
 import Course_Administration from '../assets/illustrations/Course_Administration.svg';
 import Course_Architecture from '../assets/illustrations/Course_Architecture.svg';
 
-import Events_Image from '../assets/images/events_image.svg';
+import SLEdu_Events_Image from '../assets/images/events_image.svg';
 
 import FacebookIcon from '../assets/icon/facebook_blue.svg';
 import TwitterIcon from '../assets/icon/twitter_blue.svg';
@@ -120,7 +120,7 @@ export default {
     Course_Administration,
     Course_Architecture,
 
-    Events_Image,
+    SLEdu_Events_Image,
 
     FacebookIcon,
     TwitterIcon,

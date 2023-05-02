@@ -23,7 +23,7 @@ const NotFound = () => {
                     OOPS!
                 </h3>
 
-                <p className="app__notfound-subheading p__subheading">
+                <p className="app__notfound-subheading p__heading">
                     Error 404: Page Not Found
                 </p>
 

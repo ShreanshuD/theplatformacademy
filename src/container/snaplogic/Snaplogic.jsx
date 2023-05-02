@@ -1,7 +1,7 @@
 import React from 'react';
 import './Snaplogic.css';
 import { images } from '../../constants';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const Snaplogic = ( {type} ) => {
     return(
@@ -15,6 +15,14 @@ const Snaplogic = ( {type} ) => {
                     <img src={images.SnaplogicMonogram_LL} alt="SnapLogic Monogram" />
                 </div>
 
+                {
+                    type === "CoursesOffered" &&
+
+                    <p className="app__snaplogic-heading p__subheading">
+                        Offered by
+                    </p>
+                }
+
                 <div className="app__snaplogic-logo">
                     <img src={images.SnaplogicLogo} alt="Snaplogic Logo" />
                 </div>
@@ -24,15 +32,15 @@ const Snaplogic = ( {type} ) => {
                 </p>
 
                 {
-                    type === "Course Details Page" ?
+                    type === "CoursesOffered" ?
 
-                    <a href="#" className="app__snaplogic-button">
+                    <Link to="/courses" className="app__snaplogic-button">
                         <button className='flex__center' type='button'>View Other Courses</button>
-                    </a>
+                    </Link>
                     :
-                    <a href="https://learn.snaplogic.com/" target="_blank" className="app__snaplogic-button">
-                        <button className='flex__center' type='button'>Visit Website <MdOutlineKeyboardArrowDown className='dropdown_arrow' /></button>
-                    </a>
+                    <Link to="https://learn.snaplogic.com/" target="_blank" className="app__snaplogic-button">
+                        <button className='flex__center' type='button'>Visit Website</button>
+                    </Link>
                 }
                 
 
