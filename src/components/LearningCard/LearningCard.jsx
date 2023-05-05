@@ -1,6 +1,6 @@
 import React from 'react';
 import './LearningCard.css';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const LearningCard = ( {title, illustration, description, navigatinglink} ) => {
@@ -18,13 +18,16 @@ const LearningCard = ( {title, illustration, description, navigatinglink} ) => {
                         <p className="app__learningcard_information-description p__paragraph">
                             {description}
                         </p>
+                        <Link to={navigatinglink} className="app__learningcard_navigate flex__center p__paragraph">
+                            Learn More <MdOutlineKeyboardArrowRight className='dropdown_arrow' />
+                        </Link>
                     </div>
                 </div>
-                <div className="app__learningcard_navigation">
+                {/* <div className="app__learningcard_navigation">
                     <Link to={navigatinglink} className="app__learningcard_navigation-navigatinglink">
                         <button type='button' className='flex__center p__paragraph'>Learn More <MdOutlineKeyboardArrowDown className='dropdown_arrow' /></button>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </>
     );

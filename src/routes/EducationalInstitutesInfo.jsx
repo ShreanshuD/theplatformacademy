@@ -10,7 +10,7 @@ const EducationalInstitutesInfo = () => {
         <>
             <NavBar />
             <InfoCard title={StudentsFutureReady.title} description={StudentsFutureReady.description} image={StudentsFutureReady.image} navigatingLink={StudentsFutureReady.navigatingLink} />
-            <TopPartner type="top_courses" />
+            <TopPartner type="top_snaplogic_courses" />
             <CustomCard title={CustomCourse.title} description={CustomCourse.description} image={CustomCourse.image} navigatingLink={CustomCourse.navigatingLink} />
             <Footer />
         </>

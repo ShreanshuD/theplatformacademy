@@ -26,7 +26,7 @@
 }
 
 .app__coursecard:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
 }
@@ -61,9 +61,13 @@
     margin-right: 0.6rem;
 }
 
+.mobius__monogram {
+    width: 12%;
+}
+
 .app__coursecard-footer_name {
     width: 70%;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-main);
     letter-spacing: 0.03em;
     color: var(--color-black);
@@ -97,6 +101,10 @@
     .app__coursecard-footer_logo {
         width: 8%;
     }
+
+    .mobius__monogram {
+        width: 14%;
+    }
 }
 
 
@@ -104,6 +112,10 @@
 @media screen and (min-width: 1150px) and (max-width: 1350px) {
     .app__coursecard-title {
         height: 10rem;
+    }
+
+    .mobius__monogram {
+        width: 16%;
     }
 }
 
@@ -147,6 +159,10 @@
         width: 6%;
     }
 
+    .mobius__monogram {
+        width: 14%;
+    }
+
     .app__coursecard-footer_name {
         font-size: 16px;
     }
@@ -187,6 +203,11 @@
     .app__coursecard-footer_logo {
         width: 10%;
     }
+
+    .mobius__monogram {
+        width: 14%;
+        margin-top: 5px;
+    }
 }
 
 
@@ -212,9 +233,36 @@
         width: 8%;
     }
 
+    .mobius__monogram {
+        width: 16%;
+    }
+
     .app__coursecard-footer_name {
         font-size: 10px;
         line-height: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .mobius__monogram {
+        width: 16%;
+        margin-top: 8px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__coursecard-footer_logo {
+        width: 8%;
+        margin-top: 3px;
+    }
+
+    .mobius__monogram {
+        width: 18%;
+        margin-top: 10px;
     }
 }
 
@@ -239,5 +287,18 @@
     .app__coursecard-footer_name {
         font-size: 8px;
         line-height: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app__coursecard-footer_logo {
+        width: 10%;
+    }
+
+    .mobius__monogram {
+        width: 18%;
+        margin-top: 10px;
     }
 }

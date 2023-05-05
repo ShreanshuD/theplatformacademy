@@ -2,6 +2,9 @@ import TPALogo from '../assets/logo/tpa_logo.svg';
 import ThePlatformAcademyLogo from '../assets/logo/theplatformacademy_logo.svg';
 
 import HeroImage from '../assets/images/hero_image.svg';
+import BannerLarge from '../assets/images/BannerLarge.svg';
+import BannerMedium from '../assets/images/BannerMedium.svg';
+import BannerSmall from '../assets/images/BannerSmall.svg';
 
 import Partnership_BrandAwareness from '../assets/illustrations/Partnership_BrandAwareness.svg';
 import Partnership_BusinessGrowth from '../assets/illustrations/Partnership_BusinessGrowth.svg';
@@ -39,12 +42,23 @@ import SnaplogicMonogram_UR from '../assets/icon/SnapLogic_Monogram_UR.svg';
 import SnaplogicMonogram_LL from '../assets/icon/SnapLogic_Monogram_LL.svg';
 import SnaplogicMonogram from '../assets/logo/SnapLogic_Monogram.svg';
 
+import MobiusLogo from '../assets/logo/Mobius_Logo.png';
+import MobiusMonogram_UR from '../assets/icon/Mobius_Monogram_UR.svg';
+import MobiusMonogram__LL from '../assets/icon/Mobius_Monogram_LL.svg';
+import MobiusMonogram from '../assets/logo/Mobius_Monogram.svg';
+
 import Course_Certification from '../assets/illustrations/Course_Certification.svg';
 import Course_Integration from '../assets/illustrations/Course_Integration.svg';
 import Course_Administration from '../assets/illustrations/Course_Administration.svg';
 import Course_Architecture from '../assets/illustrations/Course_Architecture.svg';
 
-import SLEdu_Events_Image from '../assets/images/events_image.svg';
+import Course_DataEngineering from '../assets/illustrations/Course_DataEngineering.svg';
+import Course_BusinessWorkflow from '../assets/illustrations/Course_BusinessWorkflow.svg';
+import Course_Omnichannel from '../assets/illustrations/Course_Omnichannel.svg';
+import Course_LowCode from '../assets/illustrations/Course_LowCode.svg';
+
+import SLEdu_Events_Image from '../assets/images/SLEduEvent_image.svg';
+import DEGaian_Events_Image from '../assets/images/DEGaianEvent_image.jpg';
 
 import FacebookIcon from '../assets/icon/facebook_blue.svg';
 import TwitterIcon from '../assets/icon/twitter_blue.svg';
@@ -78,6 +92,9 @@ export default {
     ThePlatformAcademyLogo,
 
     HeroImage,
+    BannerLarge,
+    BannerMedium,
+    BannerSmall,
 
     Partnership_BrandAwareness,
     Partnership_BusinessGrowth,
@@ -115,12 +132,23 @@ export default {
     SnaplogicMonogram_LL,
     SnaplogicMonogram,
 
+    MobiusLogo,
+    MobiusMonogram_UR,
+    MobiusMonogram__LL,
+    MobiusMonogram,
+
     Course_Certification,
     Course_Integration,
     Course_Administration,
     Course_Architecture,
 
+    Course_DataEngineering,
+    Course_BusinessWorkflow,
+    Course_Omnichannel,
+    Course_LowCode,
+
     SLEdu_Events_Image,
+    DEGaian_Events_Image,
 
     FacebookIcon,
     TwitterIcon,

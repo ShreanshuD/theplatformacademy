@@ -1,11 +1,18 @@
 .app__landing {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 30%;
     background-color: var(--color-white);
     overflow: hidden;
 
     position: relative;
+}
+
+.app__landing > img {
+    width: 113%;
+    /* height: 100%; */
+    margin: -35% 0 0 -6%;
+    object-fit: cover;
 }
 
 .app__landing_hero {
@@ -61,7 +68,44 @@
 
 
 
+@media screen and (min-width: 2000px) {
+    .app__landing > img {
+        margin: -34% 0 0 -6%;
+    }
+}
+
+
+
+@media screen and (max-width: 1680px) {
+    .app__landing > img {
+        margin: -28% 0 0 -6%;
+    }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .app__landing > img {
+        margin: -30% 0 0 -6%;
+    }
+}
+
+
+
+@media screen and (max-width: 1280px) {
+    .app__landing > img {
+        margin: -26% 0 0 -6%;
+    }
+}
+
+
+
 @media screen and (max-width: 1150px) {
+    .app__landing > img {
+        width: 110%;
+        margin: -30% 0 0 -6%;
+    }
+
     .app__landing_hero {
         width: 160%;
 
@@ -102,6 +146,11 @@
 
 
 @media screen and (max-width: 650px) {
+    .app__landing > img {
+        width: 113%;
+        margin: -10% 0 0 -6%;
+    }
+
     .app__landing_content {
         height: 70%;
     }
@@ -109,8 +158,40 @@
 
 
 
+@media screen and (max-width: 480px) {
+    .app__landing > img {
+        width: 114%;
+        margin: -10% 0 0 -6%;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .app__landing > img {
+        width: 116%;
+        margin: 25% 0 0 -6%;
+    }
+}
+
+
+
 @media screen and (max-width: 400px) {
+    .app__landing > img {
+        width: 115%;
+        margin: 10% 0 0 -6%;
+    }
+
     .app__landing_content {
         height: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app__landing > img {
+        width: 125%;
+        margin: 10% 0 0 -12%;
     }
 }

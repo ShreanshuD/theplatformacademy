@@ -20,15 +20,6 @@ a {
     padding-right: 6rem;
 }
 
-.app__events_bg {
-    width: 100%;
-    background: url('./assets/images/events_image.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    /* background-attachment: fixed; */
-}
-
 .app__landing_bg {
     width: 100%;
     background: url('./assets/images/hero_image.svg');
@@ -42,26 +33,26 @@ a {
     font-family: var(--font-main);
     color: var(--color-blue);
     font-weight: 500;
-    letter-spacing: 0.01em;
+    /* letter-spacing: 0.01em; */
     text-transform: capitalize;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .p__navigation_small {
     font-family: var(--font-main);
     color: var(--color-blue);
     font-weight: 500;
-    letter-spacing: 0.01em;
+    /* letter-spacing: 0.01em; */
     text-transform: capitalize;
-    line-height: 20px;
-    font-size: 18px;
+    line-height: 28px;
+    font-size: 20px;
 }
 
 .p__heading {
     font-family: var(--font-main);
     font-weight: 600;
-    letter-spacing: 0.01em;
+    /* letter-spacing: 0.01em; */
     text-transform: capitalize;
     line-height: 40px;
     font-size: 35px;
@@ -70,16 +61,16 @@ a {
 .p__subheading {
     font-family: var(--font-main);
     font-weight: 500;
-    letter-spacing: 0.01em;
+    /* letter-spacing: 0.01em; */
     text-transform: capitalize;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 26px;
 }
 
 .p__paragraph {
     font-family: var(--font-main);
     font-weight: 400;
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.02em; */
     line-height: 26px;
     font-size: 20px;
 }
@@ -110,7 +101,7 @@ a {
     border-radius: 4px;
     outline: none;
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--color-white);
     transition: 0.1s;
@@ -143,7 +134,7 @@ a {
 
     .p__navigation_small {
         line-height: 50px;
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .p__heading {
@@ -206,6 +197,15 @@ a {
         line-height: 30px;
         font-size: 24px;
     }
+
+    .p__navigation {
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .nav__button {
+        font-size: 22px;
+    }
 }
 
 
@@ -255,6 +255,18 @@ a {
         line-height: 40px;
         font-size: 30px;
     }
+
+    .p__navigation {
+        line-height: 30px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .p__navigation_small {
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 22px;
+    }
 }
 
 
@@ -301,6 +313,16 @@ a {
         line-height: 30px;
         font-size: 25px;
     }
+
+    .p__navigation {
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    .p__navigation_small {
+        line-height: 30px;
+        font-size: 22px;
+    }
 }
 
 
@@ -329,6 +351,11 @@ a {
     }
 
     .p__navigation {
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .p__navigation_small {
         line-height: 30px;
         font-size: 20px;
     }
@@ -373,6 +400,16 @@ a {
         line-height: 22px;
         font-size: 16px;
     }
+
+    .p__navigation {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .p__navigation_small {
+        line-height: 30px;
+        font-size: 18px;
+    }
 }
 
 
@@ -388,6 +425,20 @@ a {
     .p__large {
         font-size: 22px;
         line-height: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 361px) {
+    .p__navigation {
+        line-height: 20px;
+        font-size: 18px !important;
+    }
+
+    .p__navigation_small {
+        line-height: 20px;
+        font-size: 16px;
     }
 }
 

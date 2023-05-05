@@ -10,7 +10,7 @@ const LearnersInfo = () => {
         <>
             <NavBar />
             <InfoCard title={BoostYourCareer.title} description={BoostYourCareer.description} image={BoostYourCareer.image} navigatingLink={BoostYourCareer.navigatingLink} />
-            <TopPartner type="top_courses" />
+            <TopPartner type="top_snaplogic_courses" />
             <Footer />
         </>
     );

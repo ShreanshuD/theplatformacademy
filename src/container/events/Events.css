@@ -20,7 +20,7 @@
 
 .app__events-content_image {
     width: 60%;
-    height: 46rem;
+    height: 40rem;
     border-radius: 4px;
     background-color: var(--color-white);
     overflow: hidden;
@@ -34,7 +34,7 @@
 
 .app__events-content_info {
     width: 40%;
-    height: 46rem;
+    height: 40rem;
     padding: 3rem;
     line-height: 40px;
 }
@@ -44,8 +44,8 @@
 }
 
 .app__events-button {
-    width: 15%;
-    margin: 3rem auto 0;
+    width: 12%;
+    margin: 3rem auto 5rem;
     border-radius: 4px;
     display: block;
     transition: 0.1s;
@@ -53,7 +53,7 @@
 
 .app__events-button button {
     width: 100%;
-    padding: 1.6rem 0;
+    padding: 1.4rem 0;
     color: var(--color-black);
     background-color: var(--color-white);
     outline: none;
@@ -81,20 +81,20 @@
 
 @media screen and (min-width: 2000px) {
     .app__events-content_image {
-        height: 62rem;
+        height: 60rem;
     }
 
     .app__events-content_info {
-        height: 62rem;
+        height: 60rem;
         padding: 5rem;
     }
 
     .app__events-button {
-        width: 14%;
+        width: 12%;
     }
 
     .app__events-button button {
-        padding: 1.8rem 0;
+        padding: 1.6rem 0;
         font-size: 25px;
     }
 }
@@ -104,11 +104,11 @@
 @media screen and (min-width: 1550px) and (max-width: 1780px) {
 
     .app__events-content_image {
-        height: 50rem;
+        height: 48rem;
     }
 
     .app__events-content_info {
-        height: 50rem;
+        height: 48rem;
     }
 }
 
@@ -116,18 +116,18 @@
 
 @media screen and (max-width: 1550px) {
     .app__events-content_image {
-        height: 56rem;
+        height: 50rem;
     }
     
     .app__events-content_info {
-        height: 56rem;
+        height: 50rem;
         line-height: 55px;
     }
 }
 
 
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1367px) {
     .app__events-content {
         flex-direction: column;
     }
@@ -140,7 +140,7 @@
     
     .app__events-content_info {
         width: 100%;
-        height: fit-content;
+        height: 30rem;
     }
 }
 
@@ -149,6 +149,14 @@
 @media screen and (max-width: 1200px) {
     .app__events-button {
         width: 20%;
+    }
+
+    .app__events-button button {
+        padding: 1rem 0;
+    }
+
+    .app__events-content_info {
+        height: 40rem;
     }
 }
 
@@ -162,9 +170,21 @@
 
 
 
+@media screen and (max-width: 850px) {
+    .app__events-content_info {
+        height: 36rem;
+    }
+
+    .app__events-button button {
+        padding: 0.8rem 0;
+    }
+}
+
+
+
 @media screen and (max-width: 650px) {
     .app__events-button {
-        width: 50%;
+        width: 40%;
     }
 
     .app__events-content_image {
@@ -187,10 +207,19 @@
 
     .app__events-content_info::-webkit-scrollbar-thumb {
         background: #88caf0;
+        border-radius: 10px;
     }
 
     .app__events-button button {
         padding: 1.4rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .app__events-button {
+        margin: 0rem auto 4rem;
     }
 }
 
@@ -202,11 +231,11 @@
     }
 
     .app__events-button {
-        width: 60%;
+        width: 45%;
     }
 
     .app__events-button button {
-        padding: 1.2rem 0;
+        padding: 0.8rem 0;
         font-size: 14px;
     }
 }

@@ -4,8 +4,8 @@
     margin-bottom: 2rem;
     flex-direction: column;
     border-radius: 6px;
-    background-color: var(--color-white);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background-color: var(--color-white); */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     /* box-shadow: rgba(123, 185, 221, 0.2) 0px 10px 20px, rgba(123, 185, 221, 0.1) 0px 6px 6px; */
     transform: 0.1s;
 }
@@ -28,7 +28,7 @@
 @media screen and (min-width: 2000px) {
     .app__illustrationcard {
         min-height: 280px;
-        margin-bottom: 3.2rem;
+        margin-bottom: 0rem;
         border-radius: 8px;
     }
 
@@ -57,6 +57,10 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+    .app__illustrationcard_illustration {
+        width: 100px;
+    }
 }
 
 
@@ -64,10 +68,7 @@
 @media screen and (max-width: 1150px) {
     .app__illustrationcard {
         min-height: 250px;
-    }
-
-    .app__illustrationcard:nth-child(2) {
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 
     .app__illustrationcard_illustration {
@@ -112,7 +113,7 @@
     }
 
     .app__illustrationcard_illustration {
-        width: 60px;
+        width: 90px;
     }
     
     .app__illustrationcard_title {
@@ -135,6 +136,10 @@
 @media screen and (max-width: 380px) {
     .app__illustrationcard {
         width: 40%;
+    }
+
+    .app__illustrationcard_illustration {
+        width: 80px;
     }
 
     .app__illustrationcard_title {

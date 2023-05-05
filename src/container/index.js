@@ -8,7 +8,7 @@ import Events from "./events/Events";
 import Footer from "./footer/Footer";
 
 import Snaplogic from "./snaplogic/Snaplogic";
-import Courses from "./courses/Courses";
+import Courses from "./courses/SnaplogicCourses";
 
 import UnderConstruction from "./under_construction/UnderConstruction";
 import NotFound from "./not_found/NotFound";

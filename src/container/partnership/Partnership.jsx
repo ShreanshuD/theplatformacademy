@@ -23,7 +23,7 @@ const Partnership = () => {
                     <p className="app__partnership_partner-subheading p__subheading">
                         Benefits
                     </p>
-                    <div className="app__partnership_partner-illustrationcards">
+                    <div className="app__partnership_partner-illustrationcards benefit__illustrationcards">
                         {
                             Benefits.map( (Benefit, idx) => <IllustrationCard title={Benefit.title} illustration={Benefit.illustration} key={"Illustration Card " + idx} />)
                         }
@@ -32,7 +32,7 @@ const Partnership = () => {
                     <p className="app__partnership_partner-subheading p__subheading">
                         Why India?
                     </p>
-                    <div className="app__partnership_partner-illustrationcards">
+                    <div className="app__partnership_partner-illustrationcards whyus__illustrationcards">
                         {
                             WhyIndia.map( (Why, idx) => <IllustrationCard title={Why.title} illustration={Why.illustration} key={"Illustration Card " + idx} />)
                         }

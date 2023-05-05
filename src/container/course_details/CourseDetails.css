@@ -1,42 +1,77 @@
 .app__coursedetails {
     width: 100%;
+    margin-top: 2rem;
     background-color: var(--color-white);
+    padding-bottom: 0;
 }
 
-.app__coursedetails-heading {
+.app__coursedetails_heading {
     color: var(--color-blue);
 }
 
-.app__coursedetails-illustration {
-    width: 100%;
-    margin: 5rem 0;
+.app__coursedetails_hero {
+    height: 30rem;
+    margin: 2rem 0 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app__coursedetails_hero-illustration {
+    width: 69%;
+    height: 100%;
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    box-shadow: 1px 2px 12px rgba(36, 79, 105, 0.2);
 }
 
-.app__coursedetails-illustration img {
-    width: 40% !important;
+.app__coursedetails_hero-illustration img {
+    width: 35% !important;
 }
 
-.app__coursedetails-navigation {
+.app__coursedetails_hero-details {
+    width: 28%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app__coursedetails_hero-details-info {
     width: 100%;
-    margin-bottom: 5rem;
+}
+
+.app__coursedetails_hero-details-info-subheading {
+    margin-bottom: 1rem;
+    /* font-weight: 600; */
+}
+
+/* .app__coursedetails_hero-details-info-description {
+    font-weight: 500;
+} */
+
+.app__coursedetails_hero-details-navigation {
+    width: 100%;
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.app__coursedetails-navigation-button {
-    width: 12%;
-    margin: 0 2rem;
+.app__coursedetails_hero-details-navigation-button {
+    width: 40%;
+    margin: 0 3rem;
     border-radius: 4px;
     display: block;
     transition: 0.1s;
 }
 
-.app__coursedetails-navigation-button button {
+.app__coursedetails_hero-details-navigation-button:first-child {
+    margin: 0 0;
+}
+
+.app__coursedetails_hero-details-navigation-button button {
     width: 100%;
     padding: 1rem 0;
     color: var(--color-black);
@@ -45,23 +80,23 @@
     border: none;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.1s;
 }
 
-.app__coursedetails-navigation-button:last-child button {
+.app__coursedetails_hero-details-navigation-button:last-child button {
     background-color: var(--color-yellow);
 }
 
-.app__coursedetails-navigation-button:hover {
+.app__coursedetails_hero-details-navigation-button:hover {
     transform: scale(1.02);
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 }
 
-.app__coursedetails-navigation-button:active {
+.app__coursedetails_hero-details-navigation-button:active {
     transform: scale(1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
@@ -70,15 +105,7 @@
     margin-right: 1rem;
 }
 
-.app__coursedetails-subheading {
-    margin-bottom: 2rem;
-}
-
-.app__coursedetails-description {
-    margin-bottom: 5rem;
-}
-
-.app__coursedetails-content {
+.app__coursedetails_content {
     width: 100%;
     margin-bottom: 5rem;
     
@@ -87,60 +114,270 @@
     align-items: flex-start;
 }
 
-.app__coursedetails-content-about {
-    width: 65%;
-    flex-direction: column;
-    justify-content: flex-start;
+.app__coursedetails_content-about {
+    width: 69%;
 }
 
-.app__coursedetails-content-aboutonly {
+.app__coursedetails_content-aboutonly {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.app__coursedetails-content-about p:first-child,
-.app__coursedetails-content-aboutonly p:first-child {
-    margin-bottom: 3rem;
+.app__coursedetails_content-about p:first-child,
+.app__coursedetails_content-aboutonly p:first-child {
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: 600;
 }
 
-.app__coursedetails-content-curriculum {
-    width: 30%;
-    flex-direction: column;
-    justify-content: flex-start;
+.app__coursedetails_content-about p:last-child b,
+.app__coursedetails_content-aboutonly p:last-child b {
+    font-weight: 600;
 }
 
-.app__coursedetails-content-curriculumonly {
+.app__coursedetails_content-curriculum {
+    width: 28%;
+}
+
+.app__events-button button {
+    padding: 1.4rem 0;
+}
+
+.app__coursedetails_content-curriculumonly {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.app__coursedetails-content-curriculum p:first-child,
-.app__coursedetails-content-curriculumonly p:first-child {
-    margin-bottom: 3rem;
+.app__coursedetails_content-curriculum p:first-child,
+.app__coursedetails_content-curriculumonly p:first-child {
+    width: 100%;
+    padding: 1rem;
+    border: 6px solid var(--color-lightblue);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    font-weight: 600;
+    text-align: center;
 }
 
-.app__coursedetails-content-curriculum p:last-child {
+.app__coursedetails_content-curriculum p:last-child {
+    max-height: 40rem;
     padding: 2rem;
     background-color: var(--color-lightblue);
-    border-radius: 4px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    overflow-y: auto;
 }
 
-.app__coursedetails-content-curriculumonly p:last-child {
-    padding: 5rem 5rem;
+.app__coursedetails_content-curriculumonly p:last-child {
     background-color: var(--color-lightblue);
     border-radius: 4px;
 }
 
-.app__coursedetails-content-about p:last-child ol,
-.app__coursedetails-content-about p:last-child ul,
-.app__coursedetails-content-aboutonly p:last-child ol,
-.app__coursedetails-content-aboutonly p:last-child ul,
+.app__coursedetails_content-curriculum p:last-child::-webkit-scrollbar {
+    width: 6px;
+}
 
-.app__coursedetails-content-curriculum p:last-child ol,
-.app__coursedetails-content-curriculum p:last-child ul,
-.app__coursedetails-content-curriculumonly p:last-child ol,
-.app__coursedetails-content-curriculumonly p:last-child ul {
-    margin-left: 3rem;
+.app__coursedetails_content-curriculum p:last-child::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.app__coursedetails_content-curriculum p:last-child::-webkit-scrollbar-thumb {
+    background: #88caf0;
+    border-radius: 10px;
+}
+
+.app__coursedetails_content-curriculum p:last-child b,
+.app__coursedetails_content-curriculumonly p:last-child b {
+    font-weight: 600;
+}
+
+.app__coursedetails_content-about p:last-child ol,
+.app__coursedetails_content-about p:last-child ul,
+.app__coursedetails_content-aboutonly p:last-child ol,
+.app__coursedetails_content-aboutonly p:last-child ul,
+
+.app__coursedetails_content-curriculum p:last-child ol,
+.app__coursedetails_content-curriculum p:last-child ul,
+.app__coursedetails_content-curriculumonly p:last-child ol,
+.app__coursedetails_content-curriculumonly p:last-child ul {
+    margin-left: 2rem;
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__coursedetails_hero {
+        height: 40rem;
+    }
+
+    .app__coursedetails_hero-details-navigation-button button {
+        padding: 1.3rem 0;
+        font-size: 22px;
+    }
+
+    .app__coursedetails_content-curriculum p:last-child {
+        max-height: 50rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1680px) {
+    .app__coursedetails_hero-illustration {
+        width: 59%;
+    }
+    
+    .app__coursedetails_hero-details {
+        width: 38%;
+    }
+
+    .app__coursedetails_content-about {
+        width: 59%;
+    }
+
+    .app__coursedetails_content-curriculum {
+        width: 38%;
+    }
+
+    .app__coursedetails_hero-illustration img {
+        width: 40% !important;
+    }
+
+    .app__coursedetails_hero-details-navigation-button button {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .app__coursedetails_hero-illustration img {
+        width: 50% !important;
+    }
+
+    .app__coursedetails_content-curriculum p:last-child {
+        padding: 1rem;
+    }
+
+    .app__coursedetails_hero-details-navigation-button button {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .app__coursedetails_hero-illustration {
+        width: 39%;
+    }
+
+    .app__coursedetails_hero-illustration img {
+        width: 80% !important;
+    }
+    
+    .app__coursedetails_hero-details {
+        width: 58%;
+    }
+
+    .app__coursedetails_content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .app__coursedetails_content-about {
+        width: 100%;
+    }
+
+    .app__coursedetails_content-curriculum {
+        width: 100%;
+        margin-top: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__coursedetails_hero {
+        height: 27rem;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .app__coursedetails_hero {
+        height: auto;
+        margin: 2rem 0 3rem;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .app__coursedetails_hero-illustration {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .app__coursedetails_hero-illustration img {
+        width: 50% !important;
+    }
+
+    .app__coursedetails_hero-details {
+        width: 100%;
+    }
+
+    .app__coursedetails_hero-details-navigation {
+        margin-top: 2rem;
+    }
+
+    .app__coursedetails_hero-details-navigation-button {
+        width: 30%;
+    }
+
+    .app__coursedetails_content {
+        margin-bottom: 3rem;
+    }
+
+    .app__coursedetails_content-curriculum {
+        margin-top: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .app__coursedetails_hero-details-navigation-button {
+        width: 50%;
+    }
+
+    .app__coursedetails_hero-details-navigation-button button {
+        font-size: 14px;
+    }
+
+    .share_icon {
+        margin-right: 0.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app__coursedetails_hero {
+        margin-bottom: 2rem;
+    }
+    
+    .app__coursedetails_hero-details-navigation-button {
+        width: 60%;
+    }
+    
+    .app__coursedetails_hero-details-navigation-button button {
+        padding: 0.8rem 0;
+        font-size: 12px;
+    }
 }

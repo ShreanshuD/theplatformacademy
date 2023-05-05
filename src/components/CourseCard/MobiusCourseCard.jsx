@@ -3,13 +3,13 @@ import './CourseCard.css';
 import { images } from '../../constants';
 import { Link } from 'react-router-dom';
 
-const CourseCard = ( {title, illustration, navigatinglink} ) => {
+const MobiusCourseCard = ( {title, illustration, navigatinglink} ) => {
     return(
         <>
-            <Link to="/underconstruction" className="app__coursecard-container">
+            <Link to={navigatinglink} className="app__coursecard-container">
                 <div className="app__coursecard">
 
-                    <div className="app__coursecard-illustration">
+                    <div className="app__coursecard-illustration mobius__logo">
                         <img src={illustration} alt={title + " Illustration"} />
                     </div>
 
@@ -18,11 +18,11 @@ const CourseCard = ( {title, illustration, navigatinglink} ) => {
                     </p>
 
                     <div className="app__coursecard-footer flex__center">
-                        <div className="app__coursecard-footer_logo">
-                            <img src={images.SnaplogicMonogram} alt="SnapLogic Monogram" />
+                        <div className="app__coursecard-footer_logo mobius__monogram">
+                            <img src={images.MobiusMonogram} alt="Mobius Monogram" />
                         </div>
                         <p className="app__coursecard-footer_name">
-                            Snaplogic
+                            MOBIUS
                         </p>
                     </div>
 
@@ -32,4 +32,4 @@ const CourseCard = ( {title, illustration, navigatinglink} ) => {
     );
 };
 
-export default CourseCard;
+export default MobiusCourseCard;

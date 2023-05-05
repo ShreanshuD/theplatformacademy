@@ -110,13 +110,18 @@
     height: auto;
 }
 
-.app__navbar_navigations {
+.app__navbar_navigation {
+    width: 80%;
     min-height: 5rem;
     padding: 0;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.app__navbar_navigations > * {
+.app__navbar_navigation-links {
+    flex-direction: row;
+}
+
+.app__navbar_navigation-links > * {
     margin-left: 0.2rem;
     position: relative;
 }
@@ -154,7 +159,7 @@
     opacity: 0.8;
 }
 
-.app__navbar_navigations-menu {
+.app__navbar_navigation-menu {
     width: 10rem;
     height: 100%;
     transition: ease-in-out;
@@ -166,7 +171,7 @@
 }
 
 .shift__down_aboutUs {
-    margin-top: 11.4rem;
+    margin-top: 13.4rem;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
@@ -175,7 +180,7 @@
 }
 
 .shift__down_whyUs {
-    margin-top: 8.6rem;
+    margin-top: 10.1rem;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
@@ -186,27 +191,54 @@
 .shift__down_aboutUs p:last-child,
 .shift__down_whyUs p:last-child {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
-.app__navbar_navigations-menu p {
-    width: 200%;
+.app__navbar_navigation-menu p {
+    width: 100%;
     height: 100%;
-    padding: 0.8rem 0.5rem;
     background-color: var(--color-white);
-    text-align: center;
+    text-align: left;
     cursor: pointer;
+
+    justify-content: flex-start;
 }
 
-.app__navbar_navigations-menu p:first-child {
+.app__navbar_navigation-menu p:first-child {
     width: 100%;
     min-height: 5rem;
     padding: 0.8rem 0;
+
+    justify-content: center;
 }
 
-.app__navbar_navigations-menu p:hover {
+.app__navbar_navigation-menu p:hover {
     transition: 0.2s;
     background-color: var(--color-lightblue);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.shift__down_aboutUs p {
+    width: 100%;
+    margin-left: 0rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.shift__down_aboutUs p:first-child {
+    width: 100%;
+    margin-left: 0;
+}
+
+.shift__down_whyUs p {
+    width: 200%;
+    margin-left: 10rem;
+    padding: 0.8rem 1.7rem;
+}
+
+.shift__down_whyUs p:first-child {
+    width: 100%;
+    margin-left: 0;
 }
 
 .dropdown_arrow {
@@ -214,17 +246,17 @@
     font-size: 2rem;
 }
 
-.app__navbar_navigations-button {
-    width: 15rem;
+.app__navbar_navigation-button {
+    width: 10rem;
+    margin-right: 0.8rem;
     display: block;
 }
 
-.app__navbar_navigations button {
+.app__navbar_navigation button {
     width: 100%;
-    margin-left: 0.5rem;
 }
 
-.app__navbar_navigations-small {
+.app__navbar_navigation-small {
     width: 10%;
 }
 
@@ -236,23 +268,15 @@
 }
 
 .app__navbar_overlay {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-lightblue);
-    transition: 1s;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--color-white);
+    transition: 0.1s;
 }
 
 .app__navbar_overlayclose {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-lightblue);
-    transition: 0.4s;
-    
+    transition: 0.1s;
+
     position: fixed;
     top: -150%;
     left: 0;
@@ -260,23 +284,19 @@
 }
 
 .app__navbar_overlay-close {
-    font-size: 60px;
+    font-size: 70px;
+    font-weight: 600;
     color: var(--color-blue);
     cursor: pointer;
-
-    position: absolute;
-    top: 3%;
-    right: 5%;
 }
 
-.app__navbar_overlay-navigations {
-    width: 50%;
+.app__navbar_overlay-navigation {
+    width: 100%;
     flex-direction: column;
-    transform: scale(1.5);
-}
+    justify-content: flex-start;
+    align-items: flex-start;
 
-.app__navbar_overlay-navigations .app__navbar_navigations-menu p {
-    background-color: transparent !important;
+    text-align: left;
 }
 
 
@@ -296,10 +316,10 @@
     }
 
     .app__navbar_title {
-        width: 25rem;
+        width: 30rem;
     }
 
-    .app__navbar_navigations {
+    .app__navbar_navigation {
         min-height: 6rem;
     }
 
@@ -312,16 +332,18 @@
         font-size: 1.6rem;
     }
 
-    .app__navbar_navigations-menu {
+    .app__navbar_navigation-menu {
         width: 14rem;
     }
 
-    .app__navbar_navigations-menu p {
-        width: 160%;
+    .app__navbar_navigation-menu p:first-child {
+        min-height: 6rem;
     }
 
-    .app__navbar_navigations-menu p:first-child {
-        min-height: 4rem;
+    .shift__down_whyUs p {
+        width: 180%;
+        margin-left: 11.2rem;
+        padding: 0.8rem 1.7rem;
     }
 
     .search__icon {
@@ -329,7 +351,7 @@
     }
 
     .shift__down_aboutUs {
-        margin-top: 19rem;
+        margin-top: 18.9rem;
     }
 
     .shift__down_whyUs {
@@ -340,7 +362,7 @@
 
 
 @media screen and (min-width: 1150px) and (max-width: 1400px) {
-    .app__navbar_navigations-menu {
+    .app__navbar_navigation-menu {
         width: 10rem;
     }
 }
@@ -348,23 +370,52 @@
 
 
 @media screen and (max-width: 1150px) {
+    .app__navbar_title {
+        width: 26rem;
+    }
+
     .app__registrationpopup-info-button button {
         padding: 0.4rem 1.6rem;
         font-size: 18px;
     }
 
     .app__registrationpopup-close {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
     }
 
-    .app__navbar_title {
-        width: 36%;
-    }
-
-    .app__navbar_navigations-menu p:hover {
+    .app__navbar_navigation-menu p:hover {
         transition: 0.2s;
         background-color: var(--color-lightblue);
         box-shadow: none;
+    }
+
+    .app__navbar_navigation-menu {
+        width: 100%;
+        height: auto;
+        padding: 0 3.1rem 0 2rem;
+
+        transition: 0.1s;
+    }
+    
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu p {
+        width: 100%;
+        height: auto;
+        background-color: transparent !important;
+        justify-content: space-between;
+
+        transition: 0.1s;
+    }
+    
+    .app__navigation_menu-smalldevices {
+        padding: 0.4rem 0 0.4rem 1rem;
+    }
+
+    .app__navbar_overlay-close {
+        font-size: 3rem;
+    }
+
+    .dropdown_arrow {
+        font-size: 3rem !important;
     }
 }
 
@@ -396,22 +447,27 @@
         width: 24rem;
     }
 
-    .app__navbar_overlay-navigations {
+    .app__navbar_overlay-navigation {
         width: 100%;
         padding: 0;
         transform: scale(1);
     }
 
-    .app__navbar_overlay-navigations .app__navbar_navigations-menu {
-        width: auto;
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        width: 100%;
+        padding: 0 2.7rem 0 2rem;
     }
 
-    .app__navbar_overlay-navigations .app__navbar_navigations-menu p {
-        font-size: 30px;
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu p {
+        width: 100%;
     }
 
     .app__navbar_overlay-close {
-        font-size: 40px;
+        font-size: 2.5rem;
+    }
+
+    .dropdown_arrow {
+        font-size: 2.5rem !important;
     }
 }
 
@@ -432,16 +488,30 @@
     }
 
     .app__navbar {
-        height: 3.2rem;
+        height: 5rem;
         padding: 0rem 1rem 0rem 1rem;
     }
 
-    .app__navbar_overlay-navigations .app__navbar_navigations-menu p {
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        padding: 0 1.6rem 0 2rem;
+    }
+
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu p {
+        height: auto;
+        margin: 0;
         font-size: 20px;
     }
 
     .hamburger {
         font-size: 26px;
+    }
+
+    .app__navbar_overlay-close {
+        font-size: 2rem;
+    }
+
+    .dropdown_arrow {
+        font-size: 2.3rem !important;
     }
 }
 
@@ -457,6 +527,14 @@
         font-size: 5rem;
         right: 5%;
     }
+
+    .app__navbar_title {
+        width: 20rem;
+    }
+
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        padding: 0 1.4rem 0 2rem;
+    }
 }
 
 
@@ -469,15 +547,31 @@
     }
     
     .app__navbar_title {
-        width: 16rem;
+        width: 18rem;
     }
 
-    .app__navbar_navigations-menu p {
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        padding: 0 1.2rem 0 2rem;
+    }
+
+    .app__navbar_navigation-menu p {
         width: 100%;
     }
 
     .hamburger {
         font-size: 24px;
+    }
+
+    .app__navbar_overlay-close {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        padding: 0 1rem 0 2rem;
     }
 }
 
@@ -495,5 +589,8 @@
     .app__registrationpopup-close {
         width: 8%;
     }
-}
 
+    .app__navbar_overlay-navigation .app__navbar_navigation-menu {
+        padding: 0 1.4rem 0 2rem;
+    }
+}

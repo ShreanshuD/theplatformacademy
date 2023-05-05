@@ -41,7 +41,7 @@
 }
 
 .app__presence_map {
-    width: 45%;
+    width: 35%;
 }
 
 /* .app__presence_map img {
@@ -161,7 +161,7 @@
 
     .app__presence_information {
         width: 160%;
-        margin-bottom: -8rem;
+        margin-bottom: -5rem;
         transform: scale(0.6);
     }
 

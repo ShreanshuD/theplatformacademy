@@ -59,13 +59,13 @@ const Learning = [
         title: "For System Integrators",
         description: "Business agility | Employee Engagement | Proficiency certificates | Efficient workforce",
         illustration: images.Learn_SystemIntegrators,
-        navigatinglink: "/systemintegrators"
+        navigatinglink: "/system-integrators"
     },
     {
         title: "For Educational Institutes",
         description: "Enhanced Placements | Reputation & Rank | Future-proofed grads | Learning experience",
         illustration: images.Learn_Education,
-        navigatinglink: "/educationalinstitutes"
+        navigatinglink: "/educational-institutes"
     }
 ];
 
@@ -143,97 +143,122 @@ const CityList = [
 
 
 
-const TopCourses = [
+const TopSnaplogicCourses = [
     {
         title: "Snap Development Certification",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snap-development-certification"
     },
     {
         title: "SnapLogic Integrator Certification",
         illustration: images.Course_Integration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-integrator-certification"
     },
     {
         title: "SnapLogic Administrator Certification",
         illustration: images.Course_Administration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-administrator-certification"
     },
     {
         title: "SnapLogic Architect Certification",
         illustration: images.Course_Architecture,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-architect-certification"
     }
 ];
 
 
 
-const AllCourses = [
+const TopMobiusCourses = [
+  {
+      title: "Data Engineering with Mobius PI",
+      illustration: images.Course_DataEngineering,
+      navigatinglink: ""
+  },
+  {
+      title: "Modelling Business Workflow with Mobius BoB",
+      illustration: images.Course_BusinessWorkflow,
+      navigatinglink: ""
+  },
+  {
+      title: "Low Code Cross-Platfrom App Development with Mobius Monet",
+      illustration: images.Course_LowCode,
+      navigatinglink: ""
+  },
+  {
+      title: "Creating OmniChannel CX Journey with Mobius Vinci",
+      illustration: images.Course_Omnichannel,
+      navigatinglink: ""
+  }
+];
+
+
+
+const AllSnaplogicCourses = [
     {
         title: "Snap Development Certification",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snap-development-certification"
     },
     {
         title: "Snap Development Training",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snap-development-training"
     },
     {
         title: "SnapLogic Integrator Certification",
         illustration: images.Course_Integration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-integrator-certification"
     },
     {
         title: "SnapLogic Integrator Training",
         illustration: images.Course_Integration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-integrator-training"
     },
     {
         title: "SnapLogic Integrator Library",
         illustration: images.Course_Integration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-integrator-library"
     },
     {
         title: "SnapLogic Administrator Certification",
         illustration: images.Course_Administration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-administrator-certification"
     },
     {
         title: "SnapLogic Administrator Training",
         illustration: images.Course_Administration,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-administrator-training"
     },
     {
         title: "SnapLogic Architect Certification",
         illustration: images.Course_Architecture,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-architect-certification"
     },
     {
         title: "SnapLogic Architect Training",
         illustration: images.Course_Architecture,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-architect-training"
     },
     {
-        title: "SnapLogic Continuous Integration and Continuous Delivery",
+        title: "SnapLogic: Continuous Integration and Continuous Delivery",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-continuous-integration-and-continuous-delivery"
     },
     {
         title: "SnapLogic Certified Enterprise Automation Professional",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-certified-enterprise-automation-professional"
     },
     {
         title: "SnapLogic Accreditation",
         illustration: images.Course_Certification,
-        navigatinglink: ""
+        navigatinglink: "/courses/snaplogic-accreditation"
     }
 ];
 
 
 
-const AllCourseDetails = [
+const SnaplogicCourseDetails = [
     {
         title: "Snap Development Certification",
         illustration: images.Course_Certification,
@@ -560,6 +585,8 @@ const AllCourseDetails = [
     {
         title: "SnapLogic Integrator Training",
         illustration: images.Course_Integration,
+        // Duplicate Description
+        description: "The SnapLogic Integrator training is aimed at testing your expertise on all the core aspects involved in using SnapLogic for various integration needs across the organization.",
         about: <>
           The SnapLogic Integrator Training teaches all of the concepts and tasks involved in using the SnapLogic Enterprise Integration cloud to integrate various end-points. It also teaches how to manage and monitor your SnapLogic instance.  It also contains hands-on exercises for practice. So, ensure that you have access to your SnapLogic Enterprise Integration Platform instance.  If you do not have access to the SnapLogic Integration Platform, please contact your SnapLogic Administrator or SnapLogic Account Manager.
           <br></br>
@@ -601,6 +628,16 @@ const AllCourseDetails = [
         title: "SnapLogic Integrator Library",
         illustration: images.Course_Integration,
         description: "The SnapLogic Integrator Training teaches all of the concepts and tasks involved in using SnapLogic Enterprise Integration cloud to integrate various end-points. It also teaches how to manage and monitor your SnapLogic instance. It also contains hands-on exercises for practice. So, ensure that you have access to your SnapLogic Enterprise Integration Platform instance. If you do not have access to the SnapLogic Platform, please contact your SnapLogic Administrator/SnapLogic Account Manager.",       
+        // Duplicate About
+        about: <>
+          The SnapLogic Integrator Training teaches all of the concepts and tasks involved in using the SnapLogic Enterprise Integration cloud to integrate various end-points. It also teaches how to manage and monitor your SnapLogic instance.  It also contains hands-on exercises for practice. So, ensure that you have access to your SnapLogic Enterprise Integration Platform instance.  If you do not have access to the SnapLogic Integration Platform, please contact your SnapLogic Administrator or SnapLogic Account Manager.
+          <br></br>
+          <br></br>
+          This course should take ~8 hours to complete.
+          <br></br>
+          <br></br>
+          Note: The login credentials for SnapLogic University are different from the SnapLogic Instance credentials.
+        </>,
         curriculum: <>
           <b>SnapLogic Integrator Training</b>
           <br></br>
@@ -772,6 +809,8 @@ const AllCourseDetails = [
     {
         title: "SnapLogic Administrator Certification",
         illustration: images.Course_Administration,
+        // Duplicate Description
+        description: "The SnapLogic Administrator Certification is aimed at testing your expertise in using the SnapLogic SDK, implementing different parts of Snap functionality, and building custom Snaps.",
         about: <>
           To become a certified SnapLogic Administrator, the SnapLogic Administration Certification is aimed at testing your expertise in supporting the administrative-level tasks for your SnapLogic instance. You will be tested on the various administrative level tasks that you will have to perform as a SnapLogic administrator. By signing up for this accreditation and training, you agree for us to send your name and email address to our third-party accreditation partners. The access to this course will be for 30 days.
         </>,
@@ -795,6 +834,8 @@ const AllCourseDetails = [
     {
         title: "SnapLogic Administrator Training",
         illustration: images.Course_Administration,
+        // Duplicate Description
+        description: "The SnapLogic Administrator Training is aimed at testing your expertise in using the SnapLogic SDK, implementing different parts of Snap functionality, and building custom Snaps.",
         about: <>
           The course contains five lessons:
           <ol>
@@ -822,6 +863,20 @@ const AllCourseDetails = [
         title: "SnapLogic Architect Certification",
         illustration: images.Course_Architecture,
         description: "To become a certified SnapLogic Architect, the SnapLogic Architect Certification is aimed at testing your expertise on integration reference architectures for the SnapLogic platform. You will be tested on the various key strategies that you will have to perform as a SnapLogic architect.By signing up for this accreditation and training, you agree for us to send your name and email address to our third-party accreditation partners.",        
+        // Duplicate About
+        about: <>
+          The course contains five lessons:
+          <ol>
+            <li>Introduction to SnapLogic Enterprise Integration Cloud: Learn about SnapLogic&apos;s architecture, key terms and concepts, and the functionality of the SnapLogic interfaces, i.e., the Designer, the Manager, and the Dashboard.</li>
+            <li>SnapLogic Platform Users and Groups: Master how to create users and groups in SnapLogic, learn about different user groups, update user information, and reset user passwords.</li>
+            <li>Managing the SnapLogic Instance via the Manager: Learn how to manage and monitor the SnapLogic instance from the Manager Interface. Also, you get an overview of the Manager interface, key user roles, and different organizational settings available to an administrator in SnapLogic.</li>
+            <li>Monitoring a SnapLogic Instance via the Dashboard: Learn how to monitor your SnapLogic instance from the Dashboard pane and how to monitor pipeline and Snaplex health in SnapLogic.</li>
+            <li>Snaplex Management: Learn about different types of Snaplexes and how to create, update, configure, and move a Groundplex.</li>
+          </ol>
+          <br></br>
+          <br></br>
+          The estimated duration is 3- 4 hours.
+        </>,
         curriculum: <>
           <ol>
             <li>SnapLogic Architecture</li>
@@ -845,6 +900,20 @@ const AllCourseDetails = [
         title: "SnapLogic Architect Training",
         illustration: images.Course_Architecture,
         description: "The SnapLogic Architect course covers the key strategies for architecture selection. This course walks you through various Integration Reference Architectures.",        
+        // Duplicate About
+        about: <>
+          The course contains five lessons:
+          <ol>
+            <li>Introduction to SnapLogic Enterprise Integration Cloud: Learn about SnapLogic&apos;s architecture, key terms and concepts, and the functionality of the SnapLogic interfaces, i.e., the Designer, the Manager, and the Dashboard.</li>
+            <li>SnapLogic Platform Users and Groups: Master how to create users and groups in SnapLogic, learn about different user groups, update user information, and reset user passwords.</li>
+            <li>Managing the SnapLogic Instance via the Manager: Learn how to manage and monitor the SnapLogic instance from the Manager Interface. Also, you get an overview of the Manager interface, key user roles, and different organizational settings available to an administrator in SnapLogic.</li>
+            <li>Monitoring a SnapLogic Instance via the Dashboard: Learn how to monitor your SnapLogic instance from the Dashboard pane and how to monitor pipeline and Snaplex health in SnapLogic.</li>
+            <li>Snaplex Management: Learn about different types of Snaplexes and how to create, update, configure, and move a Groundplex.</li>
+          </ol>
+          <br></br>
+          <br></br>
+          The estimated duration is 3- 4 hours.
+        </>,
         curriculum: <>
           <ol>
             <li>SnapLogic Architecture</li>
@@ -1168,28 +1237,33 @@ const EventList = [
       <span className='p__paragraph'>11:00 am - 04:00 pm | 6th May 2023</span>
       <br></br>
       <br></br>
-      Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
+      Be a part of SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the space of Data Engineering, Automation, Integration and iPaaS.
       <br></br>
       <br></br>
-      The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+      The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons in this space.
     </>,
-    image: images.SLEdu_Events_Image
+    image: images.SLEdu_Events_Image,
+    navigatingLink: "/sledu-series"
   },
   {
-    id: "GaianEvent02_SLEdu",
-    title: "SL EduSeries - ETL &  Integration Job Seminar",
+    id: "GaianEvent02_DataEngn",
+    title: "Data Engineering Talent Hunt at Gaian Solutions: Multi-city Job Fair 2023",
     description: <>
       <br></br>
       <br></br>
-      <span className='p__paragraph'>11:00 am - 04:00 pm | 6th May 2023</span>
+      <span className='p__paragraph'>11:00 am - 05:00 pm | 6th May 2023</span>
       <br></br>
       <br></br>
-      Welcome to the ETL & Integration Job Seminar by  SL EduSeries on the occasion of SnapLogic Academy India launch event. Join us for an exciting day filled with valuable insights, informative discussions, and networking opportunities. This event is designed for IT professionals, business leaders, and anyone interested in the latest trends and innovations in the world of technology.
+      Join us for the exciting multi city launch of SnapLogic Tool Academy and an exclusive Data Engineering Talent Hunt at Gaian Solutions, a job fair tailored for skilled data engineering professionals like you.
       <br></br>
       <br></br>
-      The event will kick off with a keynote address from a prominent industry leader, followed by a speech about the twin disruption of AI and No-Code, and how it's changing the game for businesses worldwide. The keynote will be followed by a panel discussion on ETL and Data Integration, where industry leaders will share their experiences, best practices, and lessons learned in this space.
+      Data engineering comprises of designing, building, and managing the infrastructure that enables our organization to store, process, and analyze large amounts of data. It involves the use of various tools and technologies to transform raw data into a usable format for analysis and business intelligence purposes.
+      <br></br>
+      <br></br>
+      Data engineering encompasses a wide range of tasks, including data acquisition, data transformation, data storage, data processing, and data analysis.
     </>,
-    image: images.SLEdu_Events_Image
+    image: images.DEGaian_Events_Image,
+    navigatingLink: ""
   },
 ];
 
@@ -1456,9 +1530,10 @@ export {
     Learning,
     FeatureList,
     CityList,
-    TopCourses,
-    AllCourses,
-    AllCourseDetails,
+    TopSnaplogicCourses,
+    TopMobiusCourses,
+    AllSnaplogicCourses,
+    SnaplogicCourseDetails,
     EventList,
     TPALaunchEvent,
     SlEduSeries,

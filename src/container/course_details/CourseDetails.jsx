@@ -1,6 +1,7 @@
 import React from 'react';
 import './CourseDetails.css';
 import { FiShare2 } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import Snaplogic from '../snaplogic/Snaplogic';
 
 const CourseDetails = ( {title, illustration, description, about, curriculum} ) => {
@@ -8,42 +9,43 @@ const CourseDetails = ( {title, illustration, description, about, curriculum} ) 
         <>
             <div className="app__coursedetails section__padding">
 
-                <h3 className="app__coursedetails-heading p__heading">
+                <h3 className="app__coursedetails_heading p__heading">
                     {title}
                 </h3>
 
-                <div className="app__coursedetails-illustration flex__center">
-                    <img src={illustration} alt={title + " Illustration"} />
+                <div className="app__coursedetails_hero flex__center">
+
+                    <div className="app__coursedetails_hero-illustration flex__center">
+                        <img src={illustration} alt={title + " Illustration"} />
+                    </div>
+
+                    <div className="app__coursedetails_hero-details flex__center">
+                        <div className='app__coursedetails_hero-details-info'>
+                            <p className="app__coursedetails_hero-details-info-subheading p__subheading">
+                                Description
+                            </p>
+                            <p className="app__coursedetails_hero-details-info-description p__paragraph">
+                                {description}
+                            </p>
+                        </div>
+                        <div className="app__coursedetails_hero-details-navigation">
+                            <Link to="" className="app__coursedetails_hero-details-navigation-button">
+                                <button className='flex__center' type='button'><FiShare2 className='share_icon'/> Share</button>
+                            </Link>
+                            <Link to="" className="app__coursedetails_hero-details-navigation-button">
+                                <button className='flex__center' type='button'>Enroll Now</button>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div className="app__coursedetails-navigation">
-                    <a href="#" className="app__coursedetails-navigation-button">
-                        <button className='flex__center' type='button'><FiShare2 className='share_icon'/> Share</button>
-                    </a>
-                    <a href="#" className="app__coursedetails-navigation-button">
-                        <button className='flex__center' type='button'>Enroll Now</button>
-                    </a>
-                </div>
+                <div className="app__coursedetails_content flex__center">
 
-                {
-                    description &&
-
-                    <>
-                        <p className="app__coursedetails-subheading p__subheading">
-                            Description
-                        </p>
-                        <p className="app__coursedetails-description p__paragraph">
-                            {description}
-                        </p>
-                    </>
-                }
-
-                <div className="app__coursedetails-content flex__center">
-
-                    {
-                        about &&
+                    {/* {
+                        about && */}
                         
-                        <div className={curriculum ? "app__coursedetails-content-about flex__center" : "app__coursedetails-content-aboutonly flex__center"}>
+                        <div className={"app__coursedetails_content-about"}>
                             <p className="p__subheading">
                                 About this course
                             </p>
@@ -51,12 +53,12 @@ const CourseDetails = ( {title, illustration, description, about, curriculum} ) 
                                 {about}
                             </p>
                         </div>
-                    }
+                    {/* } */}
 
-                    {
-                        curriculum &&
+                    {/* {
+                        curriculum && */}
 
-                        <div className={about ? "app__coursedetails-content-curriculum flex__center" : "app__coursedetails-content-curriculumonly flex__center"}>
+                        <div className={"app__coursedetails_content-curriculum"}>
                             <p className="p__subheading">
                                 Curriculum
                             </p>
@@ -64,17 +66,13 @@ const CourseDetails = ( {title, illustration, description, about, curriculum} ) 
                                 {curriculum}
                             </p>
                         </div>
-                    }
+                    {/* } */}
 
                 </div>
 
-                <h3 className="app__coursedetails-heading p__heading">
-                    Offered by
-                </h3>
-
             </div>
 
-            <Snaplogic type={"Course Details Page"} />
+            <Snaplogic type={"CoursesOffered"} />
         </>
     );
 };

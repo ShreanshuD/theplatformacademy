@@ -48,13 +48,18 @@ const Events = () => {
                     useKeyboardArrows={true}
                 >
                     {
-                        EventList.map( (event, idx) => <EventDescription key={event.id + idx + " Event"} id={event.id} title={event.title} description={event.description} image={event.image}/> )
+                        EventList.map( (event, idx) => 
+                        <>
+                            <EventDescription key={event.id + idx + " Event"} id={event.id} title={event.title} description={event.description} image={event.image}/>
+                            <Link to={event.navigatingLink} className="app__events-button">
+                                <button className='flex__center' type='button'>View Event</button>
+                            </Link>
+                        </>
+                        )
                     }
                 </Carousel>
 
-                <Link to="/event" className="app__events-button">
-                    <button className='flex__center' type='button'>View All Events</button>
-                </Link>
+                
 
             </div>
         </>

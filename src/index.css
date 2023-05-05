@@ -9,7 +9,7 @@
   --color-darkblue: #118fd8;
   --color-royalblue: #043D87;
   --color-yellow: #FF9B2B;
-  --color-lightyellow: #ffb45f;
+  --color-lightyellow: #ffad4f;
   --color-black: #000000;
   --color-white: #FFFFFF;
 }
@@ -29,6 +29,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-white);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #cfcece;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+  /* border-radius: 10px; */
 }
 
 code {

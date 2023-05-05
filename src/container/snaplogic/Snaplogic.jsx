@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Snaplogic = ( {type} ) => {
     return(
         <>
-            <div className="app__snaplogic section__padding">
+            <div className="app__snaplogic section__padding" style={ type === "SnapLogicInfo" ? {marginTop: '5rem'} : {} }>
 
                 <div className="snaplogic__monogram_top">
                     <img src={images.SnaplogicMonogram_UR} alt="SnapLogic Monogram" />
@@ -34,7 +34,7 @@ const Snaplogic = ( {type} ) => {
                 {
                     type === "CoursesOffered" ?
 
-                    <Link to="/courses" className="app__snaplogic-button">
+                    <Link to="/snaplogic" className="app__snaplogic-button large__button">
                         <button className='flex__center' type='button'>View Other Courses</button>
                     </Link>
                     :
